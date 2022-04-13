@@ -47,7 +47,8 @@
 					<!--<li><a href='#link' style="color:#2c272e">How to Set Delivery Boy Live Tracking in Firestore</a></li>-->
 					<li><a href='#payu' style="color:#2c272e">How to Manage payment gatway and add Credential in admin
 							panel</a></li>
-					<li><a href='#map' style="color:#2c272e">Enable Map SDK From Cloud Plateform.</a></li>
+					<li><a href="#map1" style="color:#ff0039">How to Add Map API key for Address</a></li>
+					<!--<li><a href='#map' style="color:#2c272e">Enable Map SDK From Cloud Plateform.</a></li>-->
 					<li><a href='#cloud' style="color:#2c272e">Enable CloudKit for multiple file select in ios.</a></li>
 
 
@@ -1006,23 +1007,100 @@
 								</ol>
 							</div>
 						</section>
-						<section id="map">
-							<div class="container">
-
-								<h2>Enable Map SDK From Cloud Plateform.</h2>
+						<section id="map1">
+							<div class="container"> <br>
+								<h2>How to Add Map API key for Address</h2>
 								<ol>
-									<li>Open your firebase project.</li>
-									<li>Go to Project Setting and follow below steps :</li><br>
-									<a href="#map"><img src="images/map1.png"></a><br><br>
-									<a href="#map"><img src="images/map2.png"></a><br><br>
+									<li>
+										Go to Google Cloud Platform. <a style="color: #3C55D1;"
+											href="https://cloud.google.com/"> Click here</a>
+									</li>
+									<li>
+										Click on console.
+										<img src="images/mapAPI1.png" alt="eShop" />
+										<br><br>
+									</li>
 
-									<li>if you want in both platform then you have to enable it for both android and ios
-										otherwise only one</li><br>
-									<a href="#map"><img src="images/map3.png"></a><br><br>
-									<a href="#map"><img src="images/map4.png"></a><br><br>
-									<a href="#map"><img src="images/map5.png"></a><br><br>
+									<li>
+										Select your Firebase Project
+										<img src="images/mapAPI2.png" alt="eShop" />
+										<br><br>
+									</li>
+									<li>
+
+										Search for APIs, which are shown in below image.
+										<img src="images/mapAPI3.png" alt="eShop" />
+										<br><br>
+									</li>
+
+									<li>
+										Click on Enable to, enable that APIs
+										<img src="images/mapAPI4.png" alt="eShop" />
+										<br><br>
+									</li>
+
+
+									<li>
+										Do above steps for below listed API. (enable all below APIs one by one by
+										searching)
+										<img src="images/mapAPI5.png" alt="eShop" />
+										<br><br>
+									</li>
+									<li>
+										Go to Credential Tab. you will find your Androiod and iOS API keys.
+										<img src="images/mapAPI6.png" alt="eShop" />
+										<br><br>
+									</li>
+									<li>
+										You have to setup those above API keys for both Platform.
+
+										<ol>
+											<li><b>Android Setup</b>
+												<ul>
+													<li>
+														Next, open android ‣ app ‣ src ‣ main ‣ AndroidManifest.xml and
+														paste the Google Maps meta data tag into your application tag
+														before
+														the activity tag, placing the API key you copied before to
+														replace
+														{{YOUR_API_KEY_HERE}}.
+														<br>
+													</li>
+
+													<xmp><meta-data android:name="com.google.android.geo.API_KEY"
+android:value="{{YOUR_API_KEY_HERE}}" /></xmp>
+												</ul>
+											</li>
+											
+										
+										<b>Note</b>: For the value field, please paste in your API Key from the Google
+										Maps
+										API registration process.<br><br>
+
+										<img src="images/mapAPI7.png" alt="eShop" />
+										<br><br>
+									<li> <b>iOS Setup</b>
+										<ul>
+											<li>
+												Next, open the ios ‣ Runner ‣ AppDelegate.swift file and paste the
+												following
+												code at shown in image.
+												<br><br>
+												GMSServices.provideAPIKey("YOUR KEY HERE")
+											</li>
+										</ul>
+									</li>
+									</li>
+									<b>Note</b>: Again, for the value field please paste in your API Key from the
+									registration process.<br><br>
+									<img src="images/mapAPI8.png" alt="eShop" />
+									
 								</ol>
 								<div class="section_bdr"></div>
+								</ul>
+								</ol>
+
+
 							</div>
 						</section>
 
