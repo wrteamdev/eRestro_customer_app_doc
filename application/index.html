@@ -124,6 +124,9 @@
                                     firebase</a></li>
                             <li class="nav-item"><a class="nav-link" href="#howToIntegratePhoneAuthentication">How to
                                     integrate Phone Authentication(OTP)</a></li>
+                            <li class="nav-item"><a class="nav-link" href='#google_fcm'>Authenticate with Firebase Using Google Sign-In</a></li>
+                            <li class="nav-item"><a class="nav-link" href='#fb_fcm'>Authenticate with Firebase Using Facebook Login</a></li>
+                            <li class="nav-item"><a class="nav-link" href='#apple_fcm'>Authenticate with Firebase Using Apple Login</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="#generate_release" class="nav-link">Generate Release APKs</a>
@@ -870,6 +873,86 @@
                                 <br /><img src="images/app/deviceEnable.png"></a><br><br>
                             </ol>
                             <hr>
+                        </section>
+                        <section id="google_fcm">
+                            <h4>Steps to Authenticate firebase using Google </h4>
+                            <ul>
+                                <li>Open your firebase console.</li>
+                                <li>Go to Sign-in method in Authentication.</li>
+                                <li>Go to the Google and enable the google sign_in automatically.
+                                    <img src="images/app/google_fcm1.png" alt="news" /><br>
+                                    <img src="images/app/google_fcm2.png" alt="news" />
+                                </li>
+                                <li>after press on save button google authentication enable in your app.</li>
+                            </ul>
+                        </section>
+
+                        <section id="fb_fcm">
+                            <h4>Authenticate Using Facebook Login on Android with Firebase.</h4>
+                            <ul>
+                                <li>first create project for your android application , go to  <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a></li>
+                                <li> Go to Facebook Quick Start Integrate the Facebook SDK</li>
+                                <li>On the <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a> site, get the <b>App ID</b> and an <b>App Secret</b> for your app. </li>
+                                <li> In the <a href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the <b>Auth</b> section. Enable Facebook Login.</li>
+                                <li>On the <b>Sign in method</b> tab, enable the <b>Facebook</b> sign-in method and specify the <b>App ID</b> and <b>App Secret</b> you got from Facebook.
+                                    <img src="images/app/fb0.png">
+                                </li>
+                                <li>Then, make sure your <b>OAuth redirect URI</b> (e.g. my-app-12345.firebaseapp.com/__/auth/handler) is listed as one of your <b>OAuth redirect URIs</b> in your Facebook app's settings page on the <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a> site in the <b>Product Setting > Facebook Login</b> config </li>
+                                <li>Add the dependencies for Firebase Authentication and Facebook Login SDK to your app-level build.gradle file:
+                                    <img src="images/app/fb1.png"><br>
+                                    <b>Edit Your Resources and Manifest</b>
+                                </li>
+                                <li>Create strings for your Facebook app ID and for those needed to enable Chrome Custom Tabs. Also, add FacebookActivity to your Android manifest.</li>
+                                <li>Open your app >res >values >strings.xml file.
+                                    <img src="images/app/fb3.png">
+                                </li>
+                                <li>Open the app >manifest >AndroidManifest.xml file.</li>
+                                <li>Add the following meta-data element, an activity for Facebook
+                                    <img src="images/app/fb2.png">
+                                </li>
+                                <li>Associate Your Package Name and Default Class with Your App</li>
+
+                                <li>Provide the Development and Release Key Hashes for Your App</li>
+                                <li>To ensure the authenticity of the interactions between your app and Facebook, you need to supply us with the Android key hash for your development environment. If your app has already been published, you should add your release key hash too.
+                                    <img src="images/app/fb5.png">
+                                    <b>Generating a Development Key Hash</b>
+                                    <ol>
+                                        <li> We will use SHA-1 key to generate hashkey for facebook login.</li>
+                                        <li>you can generate hash online. Here is external link for generate key has for facebook login.<a href="http://tomeko.net/online_tools/hex_to_base64.php" target="_blank">Key hash Genrate Link</a>
+                                            <img src="images/app/hash_key1.png"><br>
+                                            <img src="images/app/hash_key2.png">
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>Create iOS application here.
+                                    <img src="images/app/fb_ios1.png">
+                                </li>
+                                <li>Add your iOS Bundle Id as shown as below fig.
+                                    <img src="images/app/fb_ios2.png">
+                                </li>
+                                <li> Copy code shown in below fig. and paste into Info.plist file.</li>
+                                <li>and after Configure your Info.plist file.
+                                    <img src="images/app/fb_ios3.png"><br>
+                                    <!--<img src="images/app/fb_ios4.png"><br>-->
+                                    and finally iOS app in facebook authentication enabled.<br>  
+                                </li>
+
+                            </ul>
+                            <hr>
+                        </section>
+                        <section id="apple_fcm">
+                            <h4>Steps to Authenticate firebase using Apple </h4>
+                            <ul>
+                                <li>Open your firebase console.</li>
+                                <li>Go to Sign-in method in Authentication.</li>
+                                <li>Go to the Apple and enable apple sign in.
+                                    <img src="images/app/apple1.png" alt="news"/>
+                                </li>
+                                <li>In Xcode, select the Signing & Capabilities tab, and add "Sign In With Apple" as a new Capability then select a team on the Code Signing section.
+                                    <img src="images/app/apple2.png" alt="news"/>
+                                </li>
+                                <li>This will generate and configure an App ID in the "Certificates, Identifiers & Profiles" section of the Apple Developer portal. </li>
+                            </ul>
                         </section>
                     </section>
                     <section id="generate_release">
