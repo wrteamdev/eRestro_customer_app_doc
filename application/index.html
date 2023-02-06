@@ -86,6 +86,8 @@
                                     application color</a></li>
                             <li class="nav-item"><a class="nav-link" href="#howToChangeAppString">How to change
                                     application string</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#howToChangeLanguage">How to change
+                                application Language</a></li>
                             <li class="nav-item"><a class="nav-link" href="#howToChangeAppFont">How to change
                                     application font</a></li>
                             <li class="nav-item"><a class="nav-link" href="#howToChangeAppImage">How to change
@@ -386,6 +388,35 @@
                                 <li>Go to lib>utils>string.dart as shown in image and change values of variable you
                                     want to change according to your app<br><br>
                                     <img src="images/app/changeAppstrings.png" alt="eRestro" />
+                                </li>
+                            </ol>
+                            <hr>
+                        </section>
+                        <section id="howToChangeLanguage">
+                            <h4>How to change Language</h4>
+                            <ol>
+                                <li>By default,default applicaiton language is english. If you want to change default
+                                language
+                                go to lib>utils>appLanguages.dart and add your respective language's code shown in below
+                                image.
+                                Get your language code from here
+                                https://developers.google.com/admin-sdk/directory/v1/languages.<br><br>
+                                    <img src="images/app/changeDefaultLanguage.png" alt="eRestro" />
+                                </li>
+                                <li>If your default language code is not in app language list add language details
+                                        in list as shown in below image. Go to lib/utils/appLanguages.dart
+                                    <img src="images/app/addLanguage.png" alt="eRestro" />
+                                </li>
+                                <li>If your default language is not in assets/languages/[language-code].json then create new
+                                        file
+                                        in same folder with [language-code].json. Add all the labels from en.json and
+                                        convert label values in your respective language
+                                    <img src="images/app/addNewLanguage.png" alt="eRestro" />
+                                </li>
+                                <li>Copy all the labels form en.json file in your [language-code].json file.
+                                    <img src="images/app/addNewLanguage2.png" alt="eRestro" />
+                                </li>
+                                <li>If you want to add new language then follow the steps 2,3 and 4.
                                 </li>
                             </ol>
                             <hr>
