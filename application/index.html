@@ -2,1256 +2,1319 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-    <link href="images/favicon.png" rel="icon" title="eRestro" />
+    <link href="images/favicon.png" rel="icon" title="eRestro"/>
 
     <title>Documentation | eRestro</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css"/>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"/>
     <!-- Custom Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css"/>
 </head>
 
 <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
 
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+<!-- Preloader -->
+<div class="preloader">
+    <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-    <!-- Preloader End -->
+</div>
+<!-- Preloader End -->
 
-    <!-- Document Wrapper   
-        =============================== -->
-    <div id="main-wrapper">
+<!-- Document Wrapper
+    =============================== -->
+<div id="main-wrapper">
 
-        <!-- Header
-            ============================  -->
-        <header id="header" class="sticky-top">
-            <!-- Navbar -->
-            <nav class="primary-menu navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                    <!-- Sidebar Toggler -->
-                    <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none"
+    <!-- Header
+        ============================  -->
+    <header id="header" class="sticky-top">
+        <!-- Navbar -->
+        <nav class="primary-menu navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <!-- Sidebar Toggler -->
+                <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none"
                         type="button"><span></span><span class="w-75"></span><span></span></button>
-                    <!-- Logo -->
-                    <img src="images/app/ic_launcher.png" width="50" height="50" alt="logo" />
-                    <!-- Logo End -->
-                </div>
-            </nav>
-            <!-- Navbar End -->
-        </header>
-        <!-- Header End -->
-
-        <!-- Content
-            ============================ -->
-        <div id="content" role="main">
-
-            <!-- Sidebar Navigation
-                ============================ -->
-            <div class="idocs-navigation bg-dark docs-navigation-dark">
-                <ul class="nav flex-column">
-                    <li class="nav-item"><a href="#introduction" class="nav-link active">Introduction</a></li>
-
-                    <li class="nav-item"><a href="#flutter_setup" class="nav-link">Setup</a>
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link" href="#howToSetupFlutter">How to setup flutter</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#upgradeFlutter">How to setup Android
-                                    Studio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#howToChangePackageName">How to change
-                                    package name</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#howToRunFlutterProject">How to run flutter
-                                    project</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="#app_setting" class="nav-link">Change Application Settings</a>
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link" href="#howToChangeAppName">How to change
-                                    application name</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#howToChangeAppVersion">How to change
-                                    application version</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#howToChangeAppLogo">How to change
-                                    application logo</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#howToChangeAppColor">How to change
-                                    application color</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#howToChangeAppString">How to change
-                                    application string</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#howToChangeLanguage">How to change
-                                application Language</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#howToChangeAppFont">How to change
-                                    application font</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#howToChangeAppImage">How to change
-                                    application images</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item"><a href="#custom_changes" class="nav-link">Custom Changes</a>
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link" href="#HowToChangeServerUrl">How to Change server
-                                    url</a></li>
-                            <!--<li class="nav-item"><a class="nav-link" href="#HowToChangeJWTKey">How to Change JWT Key</a>
-                            </li>-->
-                            <li class="nav-item"><a class="nav-link" href="#HowToChangeDefaultCountryCodeForOTP">How to
-                                    Change default country code for OTP</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#HowToSetNotification">How to set
-                                    Notification</a></li>
-                            <li class="nav-item"><a class="nav-link"
-                                    href="#HowToManagePaymentGatwayAndAddCredentialInAdminPanel">How to manage payment
-                                    gatway and add Credential in admin panel</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#HowToAddMapAPIKeyForAddress">How to Add Map
-                                    API key for Address</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#HowToIncreaseProductLoadLimit">How to
-                                    Increase Product Load Limit</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#ChangeApiParameter">Change Api Parameter And
-                                    Api Url</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#GetPrivacyPolicyURLForPlayStore">Get
-                                    Privacy-Policy URL for PlayStore</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#ChangePredefindOrderCancleMessage">How to
-                                    Change Predefind Order Cancle Message</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="#create_accounts" class="nav-link">Create necessary Accounts</a>
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link" href="#howToIntegrateFirebase">How to integrate
-                                    firebase</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#howToIntegratePhoneAuthentication">How to
-                                    integrate Phone Authentication(OTP)</a></li>
-                            <li class="nav-item"><a class="nav-link" href='#google_fcm'>Authenticate with Firebase Using Google Sign-In</a></li>
-                            <li class="nav-item"><a class="nav-link" href='#fb_fcm'>Authenticate with Firebase Using Facebook Login</a></li>
-                            <li class="nav-item"><a class="nav-link" href='#apple_fcm'>Authenticate with Firebase Using Apple Login</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="#generate_release" class="nav-link">Generate Release APKs</a>
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link" href="#howToGenerateReleaseApk">How to generate
-                                    release apks</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#iosRelease">Steps to Publish iOS App to App
-                                    Store</a></li>
-
-                        </ul>
-                    </li>
-
-
-
-
-                    <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
-                    <li class="nav-item"><a href="#rating" class="nav-link">Your Feedback</a></li>
-                    <li class="nav-item"><a href="#contactus" class="nav-link">Contact Us</a></li>
-                </ul>
+                <!-- Logo -->
+                <img src="images/app/ic_launcher.png" width="50" height="50" alt="logo"/>
+                <!-- Logo End -->
             </div>
+        </nav>
+        <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+        ============================ -->
+    <div id="content" role="main">
+
+        <!-- Sidebar Navigation
+            ============================ -->
+        <div class="idocs-navigation bg-dark docs-navigation-dark">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="#introduction" class="nav-link active">Introduction</a></li>
+
+                <li class="nav-item"><a href="#flutter_setup" class="nav-link">Setup</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#howToSetupFlutter">How to setup flutter</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#upgradeFlutter">How to setup Android
+                            Studio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#howToChangePackageName">How to change
+                            package name</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#howToRunFlutterProject">How to run flutter
+                            project</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#app_setting" class="nav-link">Change Application Settings</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#howToChangeAppName">How to change
+                            application name</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#howToChangeAppVersion">How to change
+                            application version</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#howToChangeAppLogo">How to change
+                            application logo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#howToChangeAppColor">How to change
+                            application color</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#howToChangeAppString">How to change
+                            application string</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#howToChangeLanguage">How to change
+                            application Language</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#howToChangeAppFont">How to change
+                            application font</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#howToChangeAppImage">How to change
+                            application images</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a href="#custom_changes" class="nav-link">Custom Changes</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#HowToChangeServerUrl">How to Change server
+                            url</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="#HowToChangeJWTKey">How to Change JWT Key</a>
+                        </li>-->
+                        <li class="nav-item"><a class="nav-link" href="#HowToChangeDefaultCountryCodeForOTP">How to
+                            Change default country code for OTP</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#HowToSetNotification">How to set
+                            Notification</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                                href="#HowToManagePaymentGatwayAndAddCredentialInAdminPanel">How to manage payment
+                            gatway and add Credential in admin panel</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#HowToAddMapAPIKeyForAddress">How to Add Map
+                            API key for Address</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#HowToIncreaseProductLoadLimit">How to
+                            Increase Product Load Limit</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ChangeApiParameter">Change Api Parameter And
+                            Api Url</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#GetPrivacyPolicyURLForPlayStore">Get
+                            Privacy-Policy URL for PlayStore</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ChangePredefindOrderCancleMessage">How to
+                            Change Predefind Order Cancle Message</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#create_accounts" class="nav-link">Create necessary Accounts</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#howToIntegrateFirebase">How to integrate
+                            firebase</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#howToIntegratePhoneAuthentication">How to
+                            integrate Phone Authentication(OTP)</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#google_fcm'>Authenticate with Firebase Using Google Sign-In</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#fb_fcm'>Authenticate with Firebase Using Facebook Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#apple_fcm'>Authenticate with Firebase Using Apple Login</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#generate_release" class="nav-link">Generate Release APKs</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#howToGenerateReleaseApk">How to generate
+                            release apks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#iosRelease">Steps to Publish iOS App to App
+                            Store</a></li>
+
+                    </ul>
+                </li>
 
 
-            <!-- Docs Content  -->
-            <div class="idocs-content">
-                <div class="container">
+                <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
+                <li class="nav-item"><a href="#rating" class="nav-link">Your Feedback</a></li>
+                <li class="nav-item"><a href="#contactus" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
 
-                    <!-- Getting Started -->
-                    <section id="introduction">
-                        <h3>Introduction</h3>
-                        <p class="">Thank you for purchasing code. It really means a lot and It's our pleasure to serve
-                            top-notch service to you. Thank you so much for choosing<a href="https://wrteam.in/"
-                                style='color:#3c55d1' target="_blank"> WRTeam </a>. If you have trouble with the code
-                            and documentation please contact to our Support Team <a href="#support"
-                                style="color:#3c55d1">Here</a></p>
+
+        <!-- Docs Content  -->
+        <div class="idocs-content">
+            <div class="container">
+
+                <!-- Getting Started -->
+                <section id="introduction">
+                    <h3>Introduction</h3>
+                    <p class="">Thank you for purchasing code. It really means a lot and It's our pleasure to serve
+                        top-notch service to you. Thank you so much for choosing<a href="https://wrteam.in/"
+                                                                                   style='color:#3c55d1' target="_blank"> WRTeam </a>. If you have
+                        trouble with the code
+                        and documentation please contact to our Support Team <a href="#support"
+                                                                                style="color:#3c55d1">Here</a></p>
+                </section>
+
+
+                <hr class="divider">
+
+                <section id="flutter_setup">
+
+
+                    <section id="howToSetupFlutter">
+                        <h4>How to setup Flutter</h4>
+                        <ol>
+                            <li>
+                                Visit flutter official website : <a href="https://docs.flutter.dev/get-started/install">Get Flutter sdk </a>
+
+                                for full installation guide.
+                                <br>
+                                <br>
+                                If you prefer video tutorials, we recommend this playlist for the full installation process <br>
+                                <a href="https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm">Flutter
+                                    installation video </a>
+                            </li>
+                            <!--<li>Download Lastest Flutter SDK from below link</li>
+                            <li><a href="https://flutter.dev/docs/get-started/install/">Get Flutter sdk </a><br>
+                                <img src="images/app/setup.png" alt="eRestro" />
+                            </li>
+                            <li>If you prefer video tutorials, we recommend this playlist for the full installation
+                                process <a
+                                    href="https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm">Flutter
+                                    installation video </a>
+                            </li>
+                            <li>If you use window system follow 3 to 10 step
+                            </li>
+                            <li>Extract the zip file and copy flutter folder into your desired installation location
+                                for the
+                                Flutter SDK (eg. C:\src\flutter; do not install Flutter in a directory like
+                                C:\Program Files\).
+                            </li>
+                            <li>Inside Flutter folder find flutter_console.bat. Start it by double-clicking.<br><br>
+                                <img src="images/app/setup2.png" alt="eRestro" />
+                            </li>
+                            <li>Now set your enviournment variable</li>
+                            <li>From the Start search bar in , type ‘env’ and select Edit environment variables for
+                                your account<br><br>
+                                <img src="images/app/path.png" alt="eRestro" />
+                            </li>
+                            <li>Under User variables check if there is an entry called Path:</li>
+                            <li>Click on Edit. New Dialog open from it click on new and copy full path to
+                                flutter\bin as its value
+                            </li>
+                            <li>Now Restart your pc for changes to take effect<br><br>
+                                <img src="images/app/path2.png" alt="eRestro" />
+                            </li>
+                            <li>Now check everything is ok or not</li>
+                            <li>open cmd and do following shown in below picture<br><br>
+                                <img src="images/app/check.png" alt="eRestro" />
+                            </li>-->
+                            <li>Now open Android Studio and click on 'Open' then select 'eRestro' folder that you
+                                have downloaded from codecanyon.
+                            <li>Click on open<br><br>
+                                <img src="images/app/flutter2.png" alt="eRestro"/>
+                            </li>
+                            <li>Select folder of erestro<br><br>
+                                <img src="images/app/flutter3.png" alt="eRestro"/>
+                            </li>
+                            <li>Now if you have not set 'flutter sdk' path before. then go to File>Settings<br><br>
+                                <img src="images/app/flutter4.png" alt="eRestro"/>
+                            </li>
+                            <li>If you have not installed plugin before then click on 'plugins' tab and install
+                                flutter,dart and kotlin plugins<br><br>
+                                <img src="images/app/flutter7.png" alt="eRestro"/>
+                            </li>
+                            <li>From left pane, open 'Languages and Frameworks' and click on 'flutter', then on
+                                right panel set path of flutter folder that you have downloaded in first step<br><br>
+                                <img src="images/app/flutter5.png" alt="eRestro"/>
+                            </li>
+                            <li>It will set Dart SDK automatically, but if does not. then from left panel click on
+                                'dart' and set 'dart-sdk' path as shown in image<br><br>
+                                <img src="images/app/flutter6.png" alt="eRestro"/>
+                            </li>
+                            </li>
+                        </ol>
+                        <hr>
                     </section>
 
 
-                    <hr class="divider">
-
-                    <section id="flutter_setup">
-
-
-                        <section id="howToSetupFlutter">
-                            <h4>How to setup Flutter</h4>
-                            <ol>
-                                <li>
-                                    Visit flutter official website : <a href="https://docs.flutter.dev/get-started/install">Get Flutter sdk </a>
-
-                                    for full installation guide.
-                                    <br>
-                                    <br>
-                                    If you prefer video tutorials, we recommend this playlist for the full installation process <br>
-                                    <a href="https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm">Flutter
-                                        installation video </a>
-                                </li>
-                                <!--<li>Download Lastest Flutter SDK from below link</li>
-                                <li><a href="https://flutter.dev/docs/get-started/install/">Get Flutter sdk </a><br>
-                                    <img src="images/app/setup.png" alt="eRestro" />
-                                </li>
-                                <li>If you prefer video tutorials, we recommend this playlist for the full installation
-                                    process <a
-                                        href="https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm">Flutter
-                                        installation video </a>
-                                </li>
-                                <li>If you use window system follow 3 to 10 step
-                                </li>
-                                <li>Extract the zip file and copy flutter folder into your desired installation location
-                                    for the
-                                    Flutter SDK (eg. C:\src\flutter; do not install Flutter in a directory like
-                                    C:\Program Files\).
-                                </li>
-                                <li>Inside Flutter folder find flutter_console.bat. Start it by double-clicking.<br><br>
-                                    <img src="images/app/setup2.png" alt="eRestro" />
-                                </li>
-                                <li>Now set your enviournment variable</li>
-                                <li>From the Start search bar in , type ‘env’ and select Edit environment variables for
-                                    your account<br><br>
-                                    <img src="images/app/path.png" alt="eRestro" />
-                                </li>
-                                <li>Under User variables check if there is an entry called Path:</li>
-                                <li>Click on Edit. New Dialog open from it click on new and copy full path to
-                                    flutter\bin as its value
-                                </li>
-                                <li>Now Restart your pc for changes to take effect<br><br>
-                                    <img src="images/app/path2.png" alt="eRestro" />
-                                </li>
-                                <li>Now check everything is ok or not</li>
-                                <li>open cmd and do following shown in below picture<br><br>
-                                    <img src="images/app/check.png" alt="eRestro" />
-                                </li>-->
-                                <li>Now open Android Studio and click on 'Open' then select 'eRestro' folder that you
-                                    have downloaded from codecanyon.
-                                <li>Click on open<br><br>
-                                    <img src="images/app/flutter2.png" alt="eRestro" />
-                                </li>
-                                <li>Select folder of erestro<br><br>
-                                    <img src="images/app/flutter3.png" alt="eRestro" />
-                                </li>
-                                <li>Now if you have not set 'flutter sdk' path before. then go to File>Settings<br><br>
-                                    <img src="images/app/flutter4.png" alt="eRestro" />
-                                </li>
-                                <li>If you have not installed plugin before then click on 'plugins' tab and install
-                                    flutter,dart and kotlin plugins<br><br>
-                                    <img src="images/app/flutter7.png" alt="eRestro" />
-                                </li>
-                                <li>From left pane, open 'Languages and Frameworks' and click on 'flutter', then on
-                                    right panel set path of flutter folder that you have downloaded in first step<br><br>
-                                    <img src="images/app/flutter5.png" alt="eRestro" />
-                                </li>
-                                <li>It will set Dart SDK automatically, but if does not. then from left panel click on
-                                    'dart' and set 'dart-sdk' path as shown in image<br><br>
-                                    <img src="images/app/flutter6.png" alt="eRestro" />
-                                </li>
-                                </li>
-                            </ol>
-                            <hr>
-                        </section>
-
-
-                        <section id="upgradeFlutter">
-                            <h4>Upgrade flutter</h4>
-                            <ol>
-                                <li>for upgrade go to terminal in android studio and type 'flutter upgrade' it will
-                                    automatically pick latest version with stable channel</li>
-                                <li>If you have updated flutter 3.x after upgrade run flutter doctor. and in flutter
-                                    doctor if you see error like licence status unknown.<br><br>
-                                    <img src="images/app/upgrade1.png" alt="eRestro" />
-                                </li>
-                                <li>Then go to sdk manager from uper right corner, then go to android sdk and then
-                                    uncheck 'hide obsolute package' then check 'android sdk command line tool latest'
-                                    then apply and then ok. it will download latest version as shown in below fig.<br><br>
-                                    <img src="images/app/upgrade2.png" alt="eRestro" />
-                                </li>
-                                <li>now run flutter doctor again your error will be removed</li>
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="howToChangePackageName">
-                            <h4>How to change package name</h4>
-                            <ol>
-                                <li>If your package directory not broken up in individual directories. In the Android
-                                    panel, click on the little gear icon.Uncheck/Deselect the Compact Empty Middle
-                                    Packages option.<br><br>
-                                    <img src="images/app/packagename_1.png" alt="eRestro" />
-                                </li>
-                                <li>Your package directory will now be broken up in individual directories.<br><br>
-                                    <img src="images/app/packagename_2.png" alt="eRestro" />
-                                </li>
-                                <li>Individually select each directory you want to rename, and: Right-click it Select
-                                    Refactor Click on Rename current In the Pop-up dialog.<br><br>
-                                    <img src="images/app/packagename_3.png" alt="eRestro" />
-                                </li>
-                                <li>Enter the new name and hit Refactor.Allow a minute to let Android Studio update all
-                                    changes.<br><br>
-                                    <img src="images/app/packagename_4.png" alt="eRestro" />
-                                </li>
-                                <li>after changing 'com.wrteam.erestro' , your directory should look like this(new name
-                                    is just for example purpose) Please give meaningful package name<br><br>
-                                    <img src="images/app/packagename_5.png" alt="eRestro" /><br>
-                                    <img src="images/app/packagename_6.png" alt="eRestro" />
-                                </li>
-                                <li>Now press ctrl + shift + R and replace old packagename with your new packagename<br><br>
-                                    <img src="images/app/packagename_7.png" alt="eRestro" />
-                                </li>
-                                <li>For ios, open ios > Runner > info.plist, search for key CFBundleIdentifier, its
-                                    value is coming from varable named 'PRODUCT_BUNDLE_IDENTIFIER'
-                                    So press Ctrl_Shift+F and search for 'PRODUCT_BUNDLE_IDENTIFIER' and at evry place
-                                    change value of this variable<br>
-                                    For example, in this project ios package name is 'com.wrteam.webviewprime' so change
-                                    it to your package name<br><br>
-                                    <img src="images/app/packagename_8.png" alt="eRestro" /><br />
-                                </li>
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="howToRunFlutterProject">
-                            <h4>How to run flutter project</h4>
-
-                            <ol>
-                                <li>Now to run project, if you see upper right part 'enable dart support' then click
-                                    that and go to pubspec.yaml file and in uper right part click 'pub get' or 'package
-                                    get' and then press run button.</li><br>
-                                <img src="images/app/open2.png" alt="eRestro" />
-                                <li><b>If you are getting error then you can perform below hack</b>
-                                <li>if in your system firewall is on, then you can temporary disable firewall and then
-                                    try to run project</li>
-                                <li>if your flutter channel is not stable then you need to change it to stable. you can
-                                    check your flutter channel by terminal. </li>
-                                <li>go to android studio in bottom line click on terminal, in terminal write flutter
-                                    channel.as shown below.<br><br>
-                                    <img src="images/app/ch1.png" alt="eRestro" />
-                                </li>
-                                <li>if your are not in stable then write "flutter channel stable"</li>
-                                <li>go to Tools > Flutter > Flutter Clean.</li>
-                                <li>go to file > invalidate cache/ restart</li>
-                                <li>If all set, then select device or run emulator, and click on 'Play' icon in uper
-                                    right corner <br>
-                                    To run app in physical device, you have to enable 'Developer Options' and 'USB
-                                    Debugging' in your phone<br><br>
-                                    <img src="images/app/runapp.png" alt="eRestro" />
-                                </li>
-                            </ol>
-                            <hr>
-                        </section>
+                    <section id="upgradeFlutter">
+                        <h4>Upgrade flutter</h4>
+                        <ol>
+                            <li>for upgrade go to terminal in android studio and type 'flutter upgrade' it will
+                                automatically pick latest version with stable channel
+                            </li>
+                            <li>If you have updated flutter 3.x after upgrade run flutter doctor. and in flutter
+                                doctor if you see error like licence status unknown.<br><br>
+                                <img src="images/app/upgrade1.png" alt="eRestro"/>
+                            </li>
+                            <li>Then go to sdk manager from uper right corner, then go to android sdk and then
+                                uncheck 'hide obsolute package' then check 'android sdk command line tool latest'
+                                then apply and then ok. it will download latest version as shown in below fig.<br><br>
+                                <img src="images/app/upgrade2.png" alt="eRestro"/>
+                            </li>
+                            <li>now run flutter doctor again your error will be removed</li>
+                        </ol>
+                        <hr>
                     </section>
-                    <section id="app_setting">
-                        <section id="howToChangeAppName">
-                            <h4>How to change application name</h4>
-                            <ol>
-                                <li>Change application name for your android application. Go to
-                                    lib>utils>string.dart<br><br>
-                                <img src="images/app/TTTAppName.png" alt="eRestro" />
-                                <li>Change application name for your android application. Go to
-                                    android/app/src/main/AndroidManifest.xml and change value of 'android:label'<br><br>
-                                    <img src="images/app/changeAppNAmeAndroid.png" alt="eRestro" />
-                                </li>
-                                <li>Change application name for your ios application. Go to ios/Runner/Info.plist and
-                                    change value of 'CFBundleName'<br><br>
-                                    <img src="images/app/changeAppNameIOS.png" alt="eRestro" />
-                                </li>
-                            </ol>
-                            <hr>
-                        </section>
+                    <section id="howToChangePackageName">
+                        <h4>How to change package name</h4>
+                        <ol>
+                            <li>If your package directory not broken up in individual directories. In the Android
+                                panel, click on the little gear icon.Uncheck/Deselect the Compact Empty Middle
+                                Packages option.<br><br>
+                                <img src="images/app/packagename_1.png" alt="eRestro"/>
+                            </li>
+                            <li>Your package directory will now be broken up in individual directories.<br><br>
+                                <img src="images/app/packagename_2.png" alt="eRestro"/>
+                            </li>
+                            <li>Individually select each directory you want to rename, and: Right-click it Select
+                                Refactor Click on Rename current In the Pop-up dialog.<br><br>
+                                <img src="images/app/packagename_3.png" alt="eRestro"/>
+                            </li>
+                            <li>Enter the new name and hit Refactor.Allow a minute to let Android Studio update all
+                                changes.<br><br>
+                                <img src="images/app/packagename_4.png" alt="eRestro"/>
+                            </li>
+                            <li>after changing 'com.wrteam.erestro' , your directory should look like this(new name
+                                is just for example purpose) Please give meaningful package name<br><br>
+                                <img src="images/app/packagename_5.png" alt="eRestro"/><br>
+                                <img src="images/app/packagename_6.png" alt="eRestro"/>
+                            </li>
+                            <li>Now press ctrl + shift + R and replace old packagename with your new packagename<br><br>
+                                <img src="images/app/packagename_7.png" alt="eRestro"/>
+                            </li>
+                            <li>For ios, open ios > Runner > info.plist, search for key CFBundleIdentifier, its
+                                value is coming from varable named 'PRODUCT_BUNDLE_IDENTIFIER'
+                                So press Ctrl_Shift+F and search for 'PRODUCT_BUNDLE_IDENTIFIER' and at evry place
+                                change value of this variable<br>
+                                For example, in this project ios package name is 'com.wrteam.webviewprime' so change
+                                it to your package name<br><br>
+                                <img src="images/app/packagename_8.png" alt="eRestro"/><br/>
+                            </li>
+                        </ol>
+                        <hr>
+                    </section>
+                    <section id="howToRunFlutterProject">
+                        <h4>How to run flutter project</h4>
+
+                        <ol>
+                            <li>Now to run project, if you see upper right part 'enable dart support' then click
+                                that and go to pubspec.yaml file and in uper right part click 'pub get' or 'package
+                                get' and then press run button.
+                            </li>
+                            <br>
+                            <img src="images/app/open2.png" alt="eRestro"/>
+                            <li><b>If you are getting error then you can perform below hack</b>
+                            <li>if in your system firewall is on, then you can temporary disable firewall and then
+                                try to run project
+                            </li>
+                            <li>if your flutter channel is not stable then you need to change it to stable. you can
+                                check your flutter channel by terminal.
+                            </li>
+                            <li>go to android studio in bottom line click on terminal, in terminal write flutter
+                                channel.as shown below.<br><br>
+                                <img src="images/app/ch1.png" alt="eRestro"/>
+                            </li>
+                            <li>if your are not in stable then write "flutter channel stable"</li>
+                            <li>go to Tools > Flutter > Flutter Clean.</li>
+                            <li>go to file > invalidate cache/ restart</li>
+                            <li>If all set, then select device or run emulator, and click on 'Play' icon in uper
+                                right corner <br>
+                                To run app in physical device, you have to enable 'Developer Options' and 'USB
+                                Debugging' in your phone<br><br>
+                                <img src="images/app/runapp.png" alt="eRestro"/>
+                            </li>
+                        </ol>
+                        <hr>
+                    </section>
+                </section>
+                <section id="app_setting">
+                    <section id="howToChangeAppName">
+                        <h4>How to change application name</h4>
+                        <ol>
+                            <li>Change application name for your android application. Go to
+                                lib>utils>string.dart<br><br>
+                                <img src="images/app/TTTAppName.png" alt="eRestro"/>
+                            <li>Change application name for your android application. Go to
+                                android/app/src/main/AndroidManifest.xml and change value of 'android:label'<br><br>
+                                <img src="images/app/changeAppNAmeAndroid.png" alt="eRestro"/>
+                            </li>
+                            <li>Change application name for your ios application. Go to ios/Runner/Info.plist and
+                                change value of 'CFBundleName'<br><br>
+                                <img src="images/app/changeAppNameIOS.png" alt="eRestro"/>
+                            </li>
+                        </ol>
+                        <hr>
+                    </section>
 
 
-                        <section id="howToChangeAppVersion">
-                            <h4>How to change application version</h4>
-                            <ol>
-                                <li>
-                                    go to pubspec.yaml and change 'version'. for example. version:1.0.1+2 .
-                                </li>
-                                <li>
-                                    <font color="red">Do not forget to execute 'flutter pub get',and 'flutter run' after
-                                        this step</font>
-                                </li>
-                            </ol>
-                            <img src="images/app/changeAppVersion.png" alt="eRestro" />
-                            <hr>
-                        </section>
+                    <section id="howToChangeAppVersion">
+                        <h4>How to change application version</h4>
+                        <ol>
+                            <li>
+                                go to pubspec.yaml and change 'version'. for example. version:1.0.1+2 .
+                            </li>
+                            <li>
+                                <font color="red">Do not forget to execute 'flutter pub get',and 'flutter run' after
+                                    this step</font>
+                            </li>
+                        </ol>
+                        <img src="images/app/changeAppVersion.png" alt="eRestro"/>
+                        <hr>
+                    </section>
 
-                        <section id="howToChangeAppLogo">
-                            <h4>How to change application logo</h4>
-                            <ol>
-                                <li>For Android, open android > app > src > main > res > add paste your logo in all
-                                    mipmap folders according to device screen size<br><br>
-                                    <img src="images/app/changeAppIconinAndroid.png" alt="eRestro" />
-                                </li>
-                                <li>For IOS open ios > Runner > Assets.xcassets > AppIcon.appiconset here you need to
-                                    put your logo according to diffrent size.<br><br>
-                                    <img src="images/app/changeAppIconInIOS.png" alt="eRestro" />
-                                </li>
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="howToChangeAppColor">
-                            <h4>How to change application color</h4>
-                            <ol>
-                                <li>Add your colors in lib>ui>styles>colors.dart and do not change the color variables
-                                    name<br><br>
-                                    <img src="images/app/changeAppcolor.png" alt="eRestro" />
-                                </li>
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="howToChangeAppString">
-                            <h4>How to change application string</h4>
-                            <ol>
-                                <li>Go to lib>utils>string.dart as shown in image and change values of variable you
-                                    want to change according to your app<br><br>
-                                    <img src="images/app/changeAppstrings.png" alt="eRestro" />
-                                </li>
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="howToChangeLanguage">
-                            <h4>How to change Language</h4>
-                            <ol>
-                                <li>By default,default applicaiton language is english. If you want to change default
+                    <section id="howToChangeAppLogo">
+                        <h4>How to change application logo</h4>
+                        <ol>
+                            <li>For Android, open android > app > src > main > res > add paste your logo in all
+                                mipmap folders according to device screen size<br><br>
+                                <img src="images/app/changeAppIconinAndroid.png" alt="eRestro"/>
+                            </li>
+                            <li>For IOS open ios > Runner > Assets.xcassets > AppIcon.appiconset here you need to
+                                put your logo according to diffrent size.<br><br>
+                                <img src="images/app/changeAppIconInIOS.png" alt="eRestro"/>
+                            </li>
+                        </ol>
+                        <hr>
+                    </section>
+                    <section id="howToChangeAppColor">
+                        <h4>How to change application color</h4>
+                        <ol>
+                            <li>Add your colors in lib>ui>styles>colors.dart and do not change the color variables
+                                name<br><br>
+                                <img src="images/app/changeAppcolor.png" alt="eRestro"/>
+                            </li>
+                        </ol>
+                        <hr>
+                    </section>
+                    <section id="howToChangeAppString">
+                        <h4>How to change application string</h4>
+                        <ol>
+                            <li>Go to lib>utils>string.dart as shown in image and change values of variable you
+                                want to change according to your app<br><br>
+                                <img src="images/app/changeAppstrings.png" alt="eRestro"/>
+                            </li>
+                        </ol>
+                        <hr>
+                    </section>
+                    <section id="howToChangeLanguage">
+                        <h4>How to change Language</h4>
+                        <ol>
+                            <li>By default,default applicaiton language is english. If you want to change default
                                 language
                                 go to lib>utils>appLanguages.dart and add your respective language's code shown in below
                                 image.
                                 Get your language code from here
                                 https://developers.google.com/admin-sdk/directory/v1/languages.<br><br>
-                                    <img src="images/app/changeDefaultLanguage.png" alt="eRestro" />
-                                </li>
-                                <li>If your default language code is not in app language list add language details
-                                        in list as shown in below image. Go to lib/utils/appLanguages.dart
-                                    <img src="images/app/addLanguage.png" alt="eRestro" />
-                                </li>
-                                <li>If your default language is not in assets/languages/[language-code].json then create new
-                                        file
-                                        in same folder with [language-code].json. Add all the labels from en.json and
-                                        convert label values in your respective language
-                                    <img src="images/app/addNewLanguage.png" alt="eRestro" />
-                                </li>
-                                <li>Copy all the labels form en.json file in your [language-code].json file.
-                                    <img src="images/app/addNewLanguage2.png" alt="eRestro" />
-                                </li>
-                                <li>If you want to add new language then follow the steps 2,3 and 4.
-                                </li>
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="howToChangeAppFont">
-                            <h4>How to change application font</h4>
-                            <ol>
-                                <li>
-                                    Go to assets/fonts and add your font as shown in image<br>
-                                    then open pubspec.yaml file and add your font details as shown in below image<br><br>
-                                    <img src="images/app/changeAppFont.png" alt="eRestro" />
-                                </li>
-
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="howToChangeAppImage">
-                            <h4>How to change application image</h4>
-                            <ol>
-                                <li>
-                                    Go to assets/images and replace your image with same name <br><br>
-                                    <img src="images/app/changeAppImage.png" alt="eRestro" />
-                                </li>
-
-                            </ol>
-                            <hr>
-                        </section>
+                                <img src="images/app/changeDefaultLanguage.png" alt="eRestro"/>
+                            </li>
+                            <li>If your default language code is not in app language list add language details
+                                in list as shown in below image. Go to lib/utils/appLanguages.dart
+                                <img src="images/app/addLanguage.png" alt="eRestro"/>
+                            </li>
+                            <li>If your default language is not in assets/languages/[language-code].json then create new
+                                file
+                                in same folder with [language-code].json. Add all the labels from en.json and
+                                convert label values in your respective language
+                                <img src="images/app/addNewLanguage.png" alt="eRestro"/>
+                            </li>
+                            <li>Copy all the labels form en.json file in your [language-code].json file.
+                                <img src="images/app/addNewLanguage2.png" alt="eRestro"/>
+                            </li>
+                            <li>If you want to add new language then follow the steps 2,3 and 4.
+                            </li>
+                        </ol>
+                        <hr>
                     </section>
-                    <section id="custom_changes">
-                        <section id="HowToChangeServerUrl">
-                            <h4>How to Change server url</h4>
-                            <ol>
-                                <li>
-                                    Go to your admin panel in that go to system and inside that client api key, here you
-                                    have to copy API link as shown in below fig and paste it in app baseURL.<br><br>
-                                    <img src="images/app/serverurladmin.png" alt="eRestro" />
+                    <section id="howToChangeAppFont">
+                        <h4>How to change application font</h4>
+                        <ol>
+                            <li>
+                                Go to assets/fonts and add your font as shown in image<br>
+                                then open pubspec.yaml file and add your font details as shown in below image<br><br>
+                                <img src="images/app/changeAppFont.png" alt="eRestro"/>
+                            </li>
 
-                                </li>
-                                <li>
-                                    Go to lib > utils > constants.dart. here you have to change your API server url.<br><br>
-                                    <img src="images/app/serverurl.png" alt="eRestro" />
+                        </ol>
+                        <hr>
+                    </section>
+                    <section id="howToChangeAppImage">
+                        <h4>How to change application image</h4>
+                        <ol>
+                            <li>
+                                Go to assets/images and replace your image with same name <br><br>
+                                <img src="images/app/changeAppImage.png" alt="eRestro"/>
+                            </li>
 
-                                </li>
-
-                            </ol>
-                            <hr>
-                        </section>
-                        <!--<section id="HowToChangeJWTKey">
-                            <h4>How to Change JWT Key</h4>
-                            <ol>
-                                <li>
-                                    Go to your admin panel in that go to system and inside that client api key, here you
-                                    have to copy secret key as shown in below fig and paste it in app jwt key.<br><br>
-                                    <img src="images/app/jwtKeyAdmin.png" alt="eRestro" /><br><br>
-
-                                </li>
-
-                            </ol>
-                            <hr>
-                        </section>-->
-                        <section id="HowToChangeDefaultCountryCodeForOTP">
-                            <h4>How to Change default country code for OTP.</h4>
-                            <ol>
-                                <li>
-                                    Go to lib>ui>screen>auth>login_screen.dart file inside that here you have to change country
-                                    code to your language code.<br><br>
-                                    <img src="images/app/changeOtp.png" alt="eRestro" />
-
-                                </li>
-
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="HowToSetNotification">
-                            <h4>How to set Notification</h4>
-                            <ol>
-                                <li>
-                                    Get server key from your firebase project and set in panel.<br><br>
-                                    <img src="images/app/notificationKeySetFirebase.png" alt="eRestro" />
-
-                                </li>
-                                <li>
-                                    Now add in admin panel<br><br>
-                                    <img src="images/app/notificationKeySetAdminPenal.png" alt="eRestro" />
-
-                                </li>
-                                <ol>
-                                    <li>For ios your need to perform below given step</li>
-                                    <li>In Xcode, open the project.</li>
-                                    <li>In the Project Navigator (the left-hand menu), select the project icon that
-                                        represents your app.</li>
-                                    <li>In the top-left corner of the right-hand pane in Xcode, select your app's
-                                        target.</li>
-                                    <li>Navigate to the Capabilities tab.</li>
-                                    <li>Enable Push Notifications.</li>
-                                    <li>Check Remote Notifications and Background Fetch from Enabling Background Modes.
-                                    </li>
-                                </ol>
-                                </li><br><br>
-                                <img src="images/app/notificationEnableInIos.png"></a><br><br>
-
-
-
-                                <li>APNs (Apple's Push Notification service) currently supports two types of
-                                    connections: token-based (.p8) and certificate-based (.p12).you can follow
-                                    either one of them</li>
-                                <br>
-                                <h4>For Token-based (.p8).</h4>
-                                <li>Log in to the Apple Developer Portal.</li>
-                                <li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and click the
-                                    App ID associated with your app.</li>
-                                <li>On the screen for your App ID, check Capabilities > Push Notifications.</li><br>
-
-                                <img src="images/app/notification1.png"></a><br><br>
-
-                                <img src="images/app/notification2.png"></a><br><br>
-
-                                <li>Select App ID in next page & click continue.</li>
-                                <li>And then create Development SSL Certificate & Production SSL Certificate by
-                                    adding CSR certificate. follow Apple's <a
-                                        href="https://help.apple.com/developer-account/" style="color:red">Create a
-                                        certificate signing request instructions.</a>
-
-                                </li>
-                                <li>Navigate to Certificates, IDs & Profiles > Keys Section and add a Universal key
-                                    for Notifications,which you can use for more than one apps as well.
-                                </li><br><br>
-
-                                <img src="images/app/notification3.png"></a><br><br>
-
-                                <li>Just save and Download & keep it safe, as it will be downloaded only once.</li>
-
-                                <br>
-
-                                <img src="images/app/notification4.png"></a><br><br>
-                                <li>Then go to Firebase and add this .p8 file along with Your Key ID and Team ID.
-                                </li>
-
-                                <br><br>
-
-                                <img src="images/app/notification5.png"></a><br><br>
-
-
-                                <h4>FOR certificate-based (.p12) :
-                                </h4>
-                                <br>
-                                <li>Log in to the Apple Developer Portal.</li>
-                                <li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and click the
-                                    App ID associated with your app.</li>
-                                <li>On the screen for your App ID, check Capabilities > Push Notifications.</li>
-                                <li>Click Save and respond to the Modify App Capabilities dialog box that appears.
-                                </li>
-                                <li>To create the certificate, we will use to communicate with Apple when sending
-                                    push notifications:</li>
-                                <ul>
-                                    <li>In a new browser tab, follow Apple's <a
-                                            href="https://help.apple.com/developer-account/#/devbfa00fef7"
-                                            style="color:red">Create a certificate signing request instructions.</a>
-                                    </li>
-                                    <li>In the Apple Developer Portal, navigate back to your App ID.</li>
-                                    <li>Click Capabilities > Push Notifications > Configure.</li>
-                                    <li>Click one of the following buttons:</li>
-                                    <ul>
-                                        <li>Development SSL Certificate > Create Certificate (for testing push
-                                            notifications while developing an iOS app)</li>
-                                        <li>Production SSL Certificate > Create Certificate (for sending push
-                                            notifications in production)</li>
-                                    </ul>
-                                    <li>Click Choose File and select the certificate signing request you created
-                                        above.</li>
-                                    <li>Click Continue.</li>
-
-                                    <li>Click Download to download the certificate.</li>
-                                    <li>Use this file to export a .p12 file in the next step.</li>
-
-                                </ul>
-
-
-                                <li>Navigate in the Apple Developer Portal to Certificates, IDs & Profiles >
-                                    Provisioning Profiles.</li>
-                                <li>Click the provisioning profile you'd like to edit.</li>
-                                <li>Edit the provisioning profile as necessary, and click Save.</li>
-                                <li>Click Download, and double-click the downloaded provisioning profile to install
-                                    it.</li>
-                                <li>Make sure your Xcode project is configured to use the provisioning profile as
-                                    necessary.Next, export the downloaded certificate (.cer file) as a .p12 file
-                                    that can be uploaded to firebase:</li>
-
-                                <ul>
-                                    <li>On your Mac, double-click the .cer file to open it in Keychain Access.</li>
-                                    <li>In Keychain Access, in the lower-left corner, select Category >
-                                        Certificates.</li>
-                                    <li>Select the certificate to export.</li>
-                                    <li>Choose File > Export Items.</li>
-                                    <li>Enter a name in the Save As field.</li>
-                                    <li>Accept the default .p12 file format and click Save. Respond to the prompts,
-                                        and enter a password for the file if necessary.</li>
-                                    <li>Keep track of this file, since you'll upload it to firebase in a later step.
-                                    </li>
-
-                                    <li>Now Goto Firebase Console> Project Settings > Cloud Messaging > Apple app
-                                        configuration, now upload p8 Cetificate here.<br>
-                                        Please go through this link to learn how to generate p8 certificate <a
-                                            href="https://fluffy.es/p8-push-notification/#generate">link for Firebase
-                                            Push Notification Certificate Generation </a><br><br>
-                                        <img src="images/app/addIos8.png" alt="eRestro" />
-                                        Now Paste Key ID and Team ID,the Key ID is the string behind AuthKey in the file
-                                        name.As for the Team ID, you can get this on your <a
-                                            href='https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Faccount%2F&rv=1#/membership'>Apple
-                                            developer account membership page</a><br><br>
-                                        <img src="images/app/addIos9.png" alt="eRestro" />
-                                    </li>
-
-
-
-                            </ol>
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="HowToManagePaymentGatwayAndAddCredentialInAdminPanel">
-                            <h4>How to manage payment gatway and add Credential in admin panel</h4>
-                            <ol>
-                                <li>
-                                    Go to the panel, in that system > payment mehod. for any payment method you have to
-                                    add just key id and secrect key.and if you don't wanat to use then disable from
-                                    here.<br><br>
-                                    <img src="images/app/paymentMethod.png" alt="eRestro" />
-
-                                </li>
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="HowToAddMapAPIKeyForAddress">
-                            <h4>How to Add Map API key for Address</h4>
-                            <ol>
-                                <li>
-                                    Go to Google Cloud Platform. <a style="color: #3C55D1;"
-                                        href="https://cloud.google.com/"> Click here</a>
-                                </li>
-                                <li>
-                                    Click on console<br><br>
-                                    <img src="images/app/mapAPI1.png" alt="eRestro" />
-
-                                </li>
-                                <li>
-                                    Select your Firebase Project<br><br>
-                                    <img src="images/app/mapAPI2.png" alt="eRestro" />
-
-                                </li>
-                                <li>
-                                    Search for APIs, which are shown in below image.<br><br>
-                                    <img src="images/app/mapAPI3.png" alt="eRestro" />
-
-                                </li>
-                                <li>
-                                    Click on Enable to, enable that APIs for Maps SDK for Android<br><br>
-                                    <img src="images/app/mapAPI4.png" alt="eRestro" />
-
-                                </li>
-                                <li>
-                                    Click on Enable to, enable that APIs for Maps SDK for IOS<br><br>
-                                    <img src="images/app/mapAPI5.png" alt="eRestro" />
-
-                                </li>
-                                <li>
-                                    Do above steps for below listed API. (enable all below APIs one by one by searching)<br><br>
-                                    <img src="images/app/mapAPI6.png" alt="eRestro" />
-
-                                </li>
-                                <li>
-                                    Go to Credential Tab. you will find your Androiod and iOS API keys.<br><br>
-                                    <img src="images/app/mapAPI7.png" alt="eRestro" />
-
-                                </li>
-                                <li>
-                                    You have to setup those above API keys for both Platform.
-                                    <ol>
-                                        <li><b>Android Setup</b>
-                                            <ul>
-                                                <li>
-                                                    Next, open android > app > src > main > AndroidManifest.xml and
-                                                    paste the Google Maps meta data tag into your application tag
-                                                    before
-                                                    the activity tag, placing the API key you copied before to
-                                                    replace
-                                                    {{YOUR_API_KEY_HERE}}.
-                                                    <br>
-                                                </li>
-
-                                                <xml>
-                                                    <meta-data android:name="com.google.android.geo.API_KEY"
-                                                        android:value="{{YOUR_API_KEY_HERE}}" />
-                                                </xml>
-                                            </ul>
-                                        </li>
-
-
-                                        <!--<b>Note</b>: For the value field, please paste in your API Key from the Google
-                                        Maps
-                                        API registration process.<br><br>-->
-
-                                        <img src="images/app/mapAPI8.png" alt="eShop" />
-                                        <br><br>
-                                        <li> <b>iOS Setup</b>
-                                            <ul>
-                                                <li>
-                                                    Next, open the ios > Runner > AppDelegate.swift file and paste
-                                                    the
-                                                    following
-                                                    code at shown in image.
-                                                    <br>
-                                                    GMSServices.provideAPIKey("YOUR KEY HERE")
-                                                </li>
-                                            </ul>
-                                        </li>
-                                </li>
-                                <b>Note</b>: Again, for the value field please paste in your API Key from the
-                                registration process.<br><br>
-                                <img src="images/app/mapAPI9.png" alt="eShop" />
-                                <li>Add android and ios Map api key for map and place search map api key Go to lib>utils>constants.dart</li></br>
-                                <img src="images/app/addMapKey.png" alt="eShop" />
-
-                            </ol>
+                        </ol>
+                        <hr>
+                    </section>
+                </section>
+                <section id="custom_changes">
+                    <section id="HowToChangeServerUrl">
+                        <h4>How to Change server url</h4>
+                        <ol>
+                            <li>
+                                Go to your admin panel in that go to system and inside that client api key, here you
+                                have to copy API link as shown in below fig and paste it in app baseURL.<br><br>
+                                <img src="images/app/serverurladmin.png" alt="eRestro"/>
 
                             </li>
-                            </ol>
-                            <hr>
-                        </section>
+                            <li>
+                                Go to lib > utils > constants.dart. here you have to change your API server url.<br><br>
+                                <img src="images/app/serverurl.png" alt="eRestro"/>
 
+                            </li>
 
+                        </ol>
+                        <hr>
+                    </section>
+                    <!--<section id="HowToChangeJWTKey">
+                        <h4>How to Change JWT Key</h4>
+                        <ol>
+                            <li>
+                                Go to your admin panel in that go to system and inside that client api key, here you
+                                have to copy secret key as shown in below fig and paste it in app jwt key.<br><br>
+                                <img src="images/app/jwtKeyAdmin.png" alt="eRestro" /><br><br>
 
+                            </li>
 
-                        <section id="HowToIncreaseProductLoadLimit">
-                            <h4>How to Increase Product Load Limit</h4>
+                        </ol>
+                        <hr>
+                    </section>-->
+                    <section id="HowToChangeDefaultCountryCodeForOTP">
+                        <h4>How to Change default country code for OTP.</h4>
+                        <ol>
+                            <li>
+                                Go to lib>ui>screen>auth>login_screen.dart file inside that here you have to change country
+                                code to your language code.<br><br>
+                                <img src="images/app/changeOtp.png" alt="eRestro"/>
+
+                            </li>
+
+                        </ol>
+                        <hr>
+                    </section>
+                    <section id="HowToSetNotification">
+                        <h4>How to set Notification</h4>
+                        <ol>
+                            <li>
+                                Get server key from your firebase project and set in panel.<br><br>
+                                <img src="images/app/notificationKeySetFirebase.png" alt="eRestro"/>
+
+                            </li>
+                            <li>
+                                Now add in admin panel<br><br>
+                                <img src="images/app/notificationKeySetAdminPenal.png" alt="eRestro"/>
+
+                            </li>
                             <ol>
-                                <li>
-                                    you can chnage at a time when request send to server how many item will fetch.go to
-                                    lib > utils > constants.dart please check below given image.<br><br>
-                                    <img src="images/app/changeProductLoadLimit.png" alt="eRestro" />
+                                <li>For ios your need to perform below given step</li>
+                                <li>In Xcode, open the project.</li>
+                                <li>In the Project Navigator (the left-hand menu), select the project icon that
+                                    represents your app.
+                                </li>
+                                <li>In the top-left corner of the right-hand pane in Xcode, select your app's
+                                    target.
+                                </li>
+                                <li>Navigate to the Capabilities tab.</li>
+                                <li>Enable Push Notifications.</li>
+                                <li>Check Remote Notifications and Background Fetch from Enabling Background Modes.
                                 </li>
                             </ol>
-                            <hr>
-                        </section>
+                            </li><br><br>
+                            <img src="images/app/notificationEnableInIos.png"></a><br><br>
 
 
-                        <section id="ChangeApiParameter">
-                            <h4>Change Api Parameter And Api Url</h4>
-                            <ol>
-                                <li> You can change or add api url from lib > utils > api.dart, for api url here
-                                    all list of api is listed that is used in app.<br><br>
-                                    <img src="images/app/changeApiUrl.png" alt="eRestro" />
+                            <li>APNs (Apple's Push Notification service) currently supports two types of
+                                connections: token-based (.p8) and certificate-based (.p12).you can follow
+                                either one of them
+                            </li>
+                            <br>
+                            <h4>For Token-based (.p8).</h4>
+                            <li>Log in to the Apple Developer Portal.</li>
+                            <li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and click the
+                                App ID associated with your app.
+                            </li>
+                            <li>On the screen for your App ID, check Capabilities > Push Notifications.</li>
+                            <br>
+
+                            <img src="images/app/notification1.png"></a><br><br>
+
+                            <img src="images/app/notification2.png"></a><br><br>
+
+                            <li>Select App ID in next page & click continue.</li>
+                            <li>And then create Development SSL Certificate & Production SSL Certificate by
+                                adding CSR certificate. follow Apple's <a
+                                        href="https://help.apple.com/developer-account/" style="color:red">Create a
+                                    certificate signing request instructions.</a>
+
+                            </li>
+                            <li>Navigate to Certificates, IDs & Profiles > Keys Section and add a Universal key
+                                for Notifications,which you can use for more than one apps as well.
+                            </li>
+                            <br><br>
+
+                            <img src="images/app/notification3.png"></a><br><br>
+
+                            <li>Just save and Download & keep it safe, as it will be downloaded only once.</li>
+
+                            <br>
+
+                            <img src="images/app/notification4.png"></a><br><br>
+                            <li>Then go to Firebase and add this .p8 file along with Your Key ID and Team ID.
+                            </li>
+
+                            <br><br>
+
+                            <img src="images/app/notification5.png"></a><br><br>
+
+
+                            <h4>FOR certificate-based (.p12) :
+                            </h4>
+                            <br>
+                            <li>Log in to the Apple Developer Portal.</li>
+                            <li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and click the
+                                App ID associated with your app.
+                            </li>
+                            <li>On the screen for your App ID, check Capabilities > Push Notifications.</li>
+                            <li>Click Save and respond to the Modify App Capabilities dialog box that appears.
+                            </li>
+                            <li>To create the certificate, we will use to communicate with Apple when sending
+                                push notifications:
+                            </li>
+                            <ul>
+                                <li>In a new browser tab, follow Apple's <a
+                                        href="https://help.apple.com/developer-account/#/devbfa00fef7"
+                                        style="color:red">Create a certificate signing request instructions.</a>
+                                </li>
+                                <li>In the Apple Developer Portal, navigate back to your App ID.</li>
+                                <li>Click Capabilities > Push Notifications > Configure.</li>
+                                <li>Click one of the following buttons:</li>
+                                <ul>
+                                    <li>Development SSL Certificate > Create Certificate (for testing push
+                                        notifications while developing an iOS app)
+                                    </li>
+                                    <li>Production SSL Certificate > Create Certificate (for sending push
+                                        notifications in production)
+                                    </li>
+                                </ul>
+                                <li>Click Choose File and select the certificate signing request you created
+                                    above.
+                                </li>
+                                <li>Click Continue.</li>
+
+                                <li>Click Download to download the certificate.</li>
+                                <li>Use this file to export a .p12 file in the next step.</li>
+
+                            </ul>
+
+
+                            <li>Navigate in the Apple Developer Portal to Certificates, IDs & Profiles >
+                                Provisioning Profiles.
+                            </li>
+                            <li>Click the provisioning profile you'd like to edit.</li>
+                            <li>Edit the provisioning profile as necessary, and click Save.</li>
+                            <li>Click Download, and double-click the downloaded provisioning profile to install
+                                it.
+                            </li>
+                            <li>Make sure your Xcode project is configured to use the provisioning profile as
+                                necessary.Next, export the downloaded certificate (.cer file) as a .p12 file
+                                that can be uploaded to firebase:
+                            </li>
+
+                            <ul>
+                                <li>On your Mac, double-click the .cer file to open it in Keychain Access.</li>
+                                <li>In Keychain Access, in the lower-left corner, select Category >
+                                    Certificates.
+                                </li>
+                                <li>Select the certificate to export.</li>
+                                <li>Choose File > Export Items.</li>
+                                <li>Enter a name in the Save As field.</li>
+                                <li>Accept the default .p12 file format and click Save. Respond to the prompts,
+                                    and enter a password for the file if necessary.
+                                </li>
+                                <li>Keep track of this file, since you'll upload it to firebase in a later step.
                                 </li>
 
-                                <li>
-                                    You can change or add parameter from lib > utils > apiBodyParameterLabels.dart, for
-                                    api parameter here all list of api paramater is listed that is used in app.<br><br>
-                                    <img src="images/app/changeApiPeramiter.png" alt="eRestro" />
+                                <li>Now Goto Firebase Console> Project Settings > Cloud Messaging > Apple app
+                                    configuration, now upload p8 Cetificate here.<br>
+                                    Please go through this link to learn how to generate p8 certificate <a
+                                            href="https://fluffy.es/p8-push-notification/#generate">link for Firebase
+                                        Push Notification Certificate Generation </a><br><br>
+                                    <img src="images/app/addIos8.png" alt="eRestro"/>
+                                    Now Paste Key ID and Team ID,the Key ID is the string behind AuthKey in the file
+                                    name.As for the Team ID, you can get this on your <a
+                                            href='https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Faccount%2F&rv=1#/membership'>Apple
+                                        developer account membership page</a><br><br>
+                                    <img src="images/app/addIos9.png" alt="eRestro"/>
                                 </li>
 
 
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="GetPrivacyPolicyURLForPlayStore">
-                            <h4>Get Privacy-Policy URL for PlayStore.</h4>
-                            <ol>
-                                <li> First login to admin panel.</li>
-                                <li>
-                                    System > Privacy Policy<br><br>
-                                </li>
-                                <img src="images/app/generatePrivacyPolicyUrlForPlayStor.png" alt="eRestro" />
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="ChangePredefindOrderCancleMessage">
-                            <h4>How to Change Predefind Order Cancle Message</h4>
-                            <ol>
-                                <li> You can change or add predefind order cancle message from lib > utils >
-                                    constants.dart</li><br>
-                                <img src="images/app/changePredefindOrderCancleMessage.png" alt="eRestro" />
-                            </ol>
-                            <hr>
-                        </section>
+                        </ol>
+                        </ol>
+                        <hr>
+                    </section>
+                    <section id="HowToManagePaymentGatwayAndAddCredentialInAdminPanel">
+                        <h4>How to manage payment gatway and add Credential in admin panel</h4>
+                        <ol>
+                            <li>
+                                Go to the panel, in that system > payment mehod. for any payment method you have to
+                                add just key id and secrect key.and if you don't wanat to use then disable from
+                                here.<br><br>
+                                <img src="images/app/paymentMethod.png" alt="eRestro"/>
+
+                            </li>
+                        </ol>
+                        <hr>
+                    </section>
+                    <section id="HowToAddMapAPIKeyForAddress">
+                        <h4>How to Add Map API key for Address</h4>
+                        <ol>
+                            <li>
+                                Go to Google Cloud Platform. <a style="color: #3C55D1;"
+                                                                href="https://cloud.google.com/"> Click here</a>
+                            </li>
+                            <li>
+                                Click on console<br><br>
+                                <img src="images/app/mapAPI1.png" alt="eRestro"/>
+
+                            </li>
+                            <li>
+                                Select your Firebase Project<br><br>
+                                <img src="images/app/mapAPI2.png" alt="eRestro"/>
+
+                            </li>
+                            <li>
+                                Search for APIs, which are shown in below image.<br><br>
+                                <img src="images/app/mapAPI3.png" alt="eRestro"/>
+
+                            </li>
+                            <li>
+                                Click on Enable to, enable that APIs for Maps SDK for Android<br><br>
+                                <img src="images/app/mapAPI4.png" alt="eRestro"/>
+
+                            </li>
+                            <li>
+                                Click on Enable to, enable that APIs for Maps SDK for IOS<br><br>
+                                <img src="images/app/mapAPI5.png" alt="eRestro"/>
+
+                            </li>
+                            <li>
+                                Do above steps for below listed API. (enable all below APIs one by one by searching)<br><br>
+                                <img src="images/app/mapAPI6.png" alt="eRestro"/>
+
+                            </li>
+                            <li>
+                                Go to Credential Tab. you will find your Androiod and iOS API keys.<br><br>
+                                <img src="images/app/mapAPI7.png" alt="eRestro"/>
+
+                            </li>
+                            <li>
+                                You have to setup those above API keys for both Platform.
+                                <ol>
+                                    <li><b>Android Setup</b>
+                                        <ul>
+                                            <li>
+                                                Next, open android > app > src > main > AndroidManifest.xml and
+                                                paste the , placing the android map API key you copied before to
+                                                replace
+                                                {{YOUR_API_KEY_HERE}}.
+                                                <br>
+                                            </li>
+
+                                            <!--<xml>
+                                                <meta-data android:name="com.google.android.geo.API_KEY"
+                                                    android:value="{{YOUR_API_KEY_HERE}}" />
+                                            </xml>-->
+                                        </ul>
+                                    </li>
+
+
+                                    <!--<b>Note</b>: For the value field, please paste in your API Key from the Google
+                                    Maps
+                                    API registration process.<br><br>-->
+
+                                    <img src="images/app/mapAPI8.png" alt="eShop"/>
+                                    <br><br>
+                                    <li><b>iOS Setup</b>
+                                        <ul>
+                                            <li>
+                                                Next, open the ios > Runner > AppDelegate.swift file and paste
+                                                the
+                                                map api key for ios.
+                                                <br>
+                                                GMSServices.provideAPIKey("YOUR KEY HERE")
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    </li>
+                                    <!--<b>Note</b>: Again, for the value field please paste in your API Key from the
+                                    registration process.<br><br>-->
+                                    <img src="images/app/mapAPI9.png" alt="eShop"/>
+                                    <li>Add android and ios Map api key for map and place search map api key Go to lib>utils>constants.dart</li>
+                                    </br>
+                                    <img src="images/app/addMapKey.png" alt="eShop"/>
+
+                                </ol>
+
+                            </li>
+                        </ol>
+                        <hr>
                     </section>
 
-                    <section id="create_accounts">
-                        <section id="howToIntegrateFirebase">
-                            <h4>How to integrate firebase</h4>
-                            <ol>
-                                <li>Create firebase project in your account</li>
-                                <li>Go to firebase console and then click on add project.</li><br>
-                                    <img src="images/app/createFirebase1.png" alt="eRestro" /><br>
-                                    <li>After that below given step will come. here you have to enter your project details.Enter your project name and then press on continue.then select email and then press continue.</li><br>
-                                    <img src="images/app/createFirebase2.png" alt="eRestro" /><br>
-                                    <img src="images/app/createFirebase3.png" alt="eRestro" /><br>
-                                    <img src="images/app/createFirebase4.png" alt="eRestro" /><br>
-                                    <li>After that your project is created</li><br>
-                                    <img src="images/app/createFirebase5.png" alt="eRestro" /><br>
-                                </li>
-                                <li>Add andorid application to your firebase project</li><br><br>
-                                    <img src="images/app/addAndroid.png" alt="eRestro" />
-                                    <li>after that below given screen will appear, in that you have to enter your packagename and appname.and then click register app.
-                                    </li>
-                                    <img src="images/app/addAndroid3.png" alt="eRestro" /><br>
-                                <li> Download this google-services.json file and put indsie android > app folder<br>
-                                    <img src="images/app/addAndroid4.png" alt="eRestro" /><br>
-                                    <img src="images/app/addAndroid5.png" alt="eRestro" /><br>
-                                </li>
-                                <li>You have connected andorid application to your firebase project successfully</li>
-                                <li>Add ios application to your firebase project<br><br>
-                                    <img src="images/app/addIos.png" alt="eRestro" />
-                                </li>
-                                <li>Get your bundle id here
-                                    [your-flutter-project-dir]\ios\Runner.xcodeproj\project.pbxproj or search for
-                                    PRODUCT_BUNDLE_IDENTIFIER and you will get following result</li><br>
-                                    <img src="images/app/addIos3.png" alt="eRestro" /><br>
-                                    <li>After that below given screen will appear, in that you have to enter your apple bundle Id and appname.and then click register app.</li><br>
-                                    <img src="images/app/addIos2.png" alt="eRestro" /><br>
-                                <li>
-                                    Download this GoogleService-Info.plist file and put indsie ios > Runner folder, Now click on next<br><br>
-                                </li>
-                                <img src="images/app/addIos4.png" alt="eRestro" /><br>
-                                <li>Now click on next next</li><br>
-                                <img src="images/app/addIos5.png" alt="eRestro" /><br>
-                                <li>Now click continue to the console button.</li><br>
-                                <img src="images/app/addIos6.png" alt="eRestro" /></li>
-                                <img src="images/app/addIos7.png" alt="eRestro" />
-                                </li>
-                                <li>You have connected ios application to your firebase project successfully</li>
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="howToIntegratePhoneAuthentication">
-                            <h4>How to enable Firebase Phone Authentication(OTP).</h4>
-                            <ol>
-                                <li>Open your firebase console.</li>
-                                <li>Go to Authentication and open Sign-in method.</li>
-                                <li>Enable Phone Sign-in method and save. </li><br>
-                                <img src="images/app/phone1.png" alt="eRestro" /><br>
-                                <li>We have to add sha1 and sha256 key in firebase, for that perform below given step
-                                    for that you can do one of the below command in terminal "keytool -list -v -keystore
-                                    ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass
-                                    android"<br><br>
-                                    <img src="images/app/generatesha1Andsha256KeyDebugCommand.png" alt="eRestro" /><br>
-                                </li>
-                                <br>OR Go to the terminal view and paste- gradlew signingReport as shown in below</br>
-                                <br>for mac it should be ./gradlew signingReport<br><br>
-                                <img src="images/app/generatesha1Andsha256KeyDebugCommandWithGradlew.png"
-                                    alt="eRestro" /><br>
-                                <img src="images/app/generatesha1Andsha256KeyDebugCommandWithGradlew2.png"
-                                    alt="eRestro" /><br>
-                                <img src="images/app/generatesha1Andsha256KeyDebugCommandWithGradlew3.png"
-                                    alt="eRestro" /><br>
-                                <li>Now take debug sha1 and sha256 will print copy that and add it in firebase console.<br><br>
-                                    <img src="images/app/shaKeyaddInFirebase.png" alt="eRestro" /><br>
-                                </li>
-                                <li>When we are releasing apk then we need to add release sha1 and sha256 key in
-                                    firebase panel otherwise otp will not work. for that perform below command in
-                                    terminal "keytool -list -v -keystore
-                                    "/Users/hencypithadiya/Documents/WorkSpace/KeyStoreFiles/erestro.jks" -alias key0".
-                                    <br><br>Replace with your keystoreFiles path:
-                                    "/Users/hencypithadiya/Documents/WorkSpace/KeyStoreFiles/erestro.jks"<br>Replace
-                                    with your alias: "key0"<br><br>
-                                    <img src="images/app/generatesha1Andsha256KeyReleaseCommand.png"
-                                        alt="eRestro" /><br>
-                                </li>
-                                <li>For ios you need to set following.<br></li>
-                                <li>Add custom URL schemes to your Xcode project:</li>
-                                <li>Open your project configuration: double-click the project name in the left tree
-                                    view. Select your app from the TARGETS section, then select the Info tab, and expand
-                                    the URL Types section.</li>
-                                <li>Click the + button, and add a URL scheme for your reversed client ID. To find this
-                                    value, open theGoogleService-Info.plist configuration file, and look for the
-                                    REVERSED_CLIENT_ID key. Copy the value of that key, and paste it into the URL
-                                    Schemes box on the configuration page. Leave the other fields blank.</li>
-                                <li>When completed, your config should look something similar to the following (but with
-                                    your application-specific values):</li><br>
-                                <img src="images/app/xcode_infotab_url_type_values.png" alt="eRestro" /><br>
-                                <li>now enable SafetyNet for use with Firebase Authentication.In the Google Cloud
-                                    Console, enable the <a
+
+                    <section id="HowToIncreaseProductLoadLimit">
+                        <h4>How to Increase Product Load Limit</h4>
+                        <ol>
+                            <li>
+                                you can chnage at a time when request send to server how many item will fetch.go to
+                                lib > utils > constants.dart please check below given image.<br><br>
+                                <img src="images/app/changeProductLoadLimit.png" alt="eRestro"/>
+                            </li>
+                        </ol>
+                        <hr>
+                    </section>
+
+
+                    <section id="ChangeApiParameter">
+                        <h4>Change Api Parameter And Api Url</h4>
+                        <ol>
+                            <li> You can change or add api url from lib > utils > api.dart, for api url here
+                                all list of api is listed that is used in app.<br><br>
+                                <img src="images/app/changeApiUrl.png" alt="eRestro"/>
+                            </li>
+
+                            <li>
+                                You can change or add parameter from lib > utils > apiBodyParameterLabels.dart, for
+                                api parameter here all list of api paramater is listed that is used in app.<br><br>
+                                <img src="images/app/changeApiPeramiter.png" alt="eRestro"/>
+                            </li>
+
+
+                        </ol>
+                        <hr>
+                    </section>
+                    <section id="GetPrivacyPolicyURLForPlayStore">
+                        <h4>Get Privacy-Policy URL for PlayStore.</h4>
+                        <ol>
+                            <li> First login to admin panel.</li>
+                            <li>
+                                System > Privacy Policy<br><br>
+                            </li>
+                            <img src="images/app/generatePrivacyPolicyUrlForPlayStor.png" alt="eRestro"/>
+                        </ol>
+                        <hr>
+                    </section>
+                    <section id="ChangePredefindOrderCancleMessage">
+                        <h4>How to Change Predefind Order Cancle Message</h4>
+                        <ol>
+                            <li> You can change or add predefind order cancle message from lib > utils >
+                                constants.dart
+                            </li>
+                            <br>
+                            <img src="images/app/changePredefindOrderCancleMessage.png" alt="eRestro"/>
+                        </ol>
+                        <hr>
+                    </section>
+                </section>
+
+                <section id="create_accounts">
+                    <section id="howToIntegrateFirebase">
+                        <h4>How to integrate firebase</h4>
+                        <ol>
+                            <li>Create firebase project in your account</li>
+                            <li>Go to firebase console and then click on add project.</li>
+                            <br>
+                            <img src="images/app/createFirebase1.png" alt="eRestro"/><br>
+                            <li>After that below given step will come. here you have to enter your project details.Enter your project name and then
+                                press on continue.then select email and then press continue.
+                            </li>
+                            <br>
+                            <img src="images/app/createFirebase2.png" alt="eRestro"/><br>
+                            <img src="images/app/createFirebase3.png" alt="eRestro"/><br>
+                            <img src="images/app/createFirebase4.png" alt="eRestro"/><br>
+                            <li>After that your project is created</li>
+                            <br>
+                            <img src="images/app/createFirebase5.png" alt="eRestro"/><br>
+                            </li>
+                            <li>Add andorid application to your firebase project</li>
+                            <br><br>
+                            <img src="images/app/addAndroid.png" alt="eRestro"/>
+                            <li>after that below given screen will appear, in that you have to enter your packagename and appname.and then click
+                                register app.
+                            </li>
+                            <img src="images/app/addAndroid3.png" alt="eRestro"/><br>
+                            <li> Download this google-services.json file and put indsie android > app folder<br>
+                                <img src="images/app/addAndroid4.png" alt="eRestro"/><br>
+                                <img src="images/app/addAndroid5.png" alt="eRestro"/><br>
+                            </li>
+                            <li>You have connected andorid application to your firebase project successfully</li>
+                            <li>Add ios application to your firebase project<br><br>
+                                <img src="images/app/addIos.png" alt="eRestro"/>
+                            </li>
+                            <li>Get your bundle id here
+                                [your-flutter-project-dir]\ios\Runner.xcodeproj\project.pbxproj or search for
+                                PRODUCT_BUNDLE_IDENTIFIER and you will get following result
+                            </li>
+                            <br>
+                            <img src="images/app/addIos3.png" alt="eRestro"/><br>
+                            <li>After that below given screen will appear, in that you have to enter your apple bundle Id and appname.and then click
+                                register app.
+                            </li>
+                            <br>
+                            <img src="images/app/addIos2.png" alt="eRestro"/><br>
+                            <li>
+                                Download this GoogleService-Info.plist file and put indsie ios > Runner folder, Now click on next<br><br>
+                            </li>
+                            <img src="images/app/addIos4.png" alt="eRestro"/><br>
+                            <li>Now click on next next</li>
+                            <br>
+                            <img src="images/app/addIos5.png" alt="eRestro"/><br>
+                            <li>Now click continue to the console button.</li>
+                            <br>
+                            <img src="images/app/addIos6.png" alt="eRestro"/></li>
+                            <img src="images/app/addIos7.png" alt="eRestro"/>
+                            </li>
+                            <li>You have connected ios application to your firebase project successfully</li>
+                        </ol>
+                        <hr>
+                    </section>
+                    <section id="howToIntegratePhoneAuthentication">
+                        <h4>How to enable Firebase Phone Authentication(OTP).</h4>
+                        <ol>
+                            <li>Open your firebase console.</li>
+                            <li>Go to Authentication and open Sign-in method.</li>
+                            <li>Enable Phone Sign-in method and save.</li>
+                            <br>
+                            <img src="images/app/phone1.png" alt="eRestro"/><br>
+                            <li>We have to add sha1 and sha256 key in firebase, for that perform below given step
+                                for that you can do one of the below command in terminal "keytool -list -v -keystore
+                                ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass
+                                android"<br><br>
+                                <img src="images/app/generatesha1Andsha256KeyDebugCommand.png" alt="eRestro"/><br>
+                            </li>
+                            <br>OR Go to the terminal view and paste- gradlew signingReport as shown in below</br>
+                            <br>for mac it should be ./gradlew signingReport<br><br>
+                            <img src="images/app/generatesha1Andsha256KeyDebugCommandWithGradlew.png"
+                                 alt="eRestro"/><br>
+                            <img src="images/app/generatesha1Andsha256KeyDebugCommandWithGradlew2.png"
+                                 alt="eRestro"/><br>
+                            <img src="images/app/generatesha1Andsha256KeyDebugCommandWithGradlew3.png"
+                                 alt="eRestro"/><br>
+                            <li>Now take debug sha1 and sha256 will print copy that and add it in firebase console.<br><br>
+                                <img src="images/app/shaKeyaddInFirebase.png" alt="eRestro"/><br>
+                            </li>
+                            <li>When we are releasing apk then we need to add release sha1 and sha256 key in
+                                firebase panel otherwise otp will not work. for that perform below command in
+                                terminal "keytool -list -v -keystore
+                                "/Users/hencypithadiya/Documents/WorkSpace/KeyStoreFiles/erestro.jks" -alias key0".
+                                <br><br>Replace with your keystoreFiles path:
+                                "/Users/hencypithadiya/Documents/WorkSpace/KeyStoreFiles/erestro.jks"<br>Replace
+                                with your alias: "key0"<br><br>
+                                <img src="images/app/generatesha1Andsha256KeyReleaseCommand.png"
+                                     alt="eRestro"/><br>
+                            </li>
+                            <li>For ios you need to set following.<br></li>
+                            <li>Add custom URL schemes to your Xcode project:</li>
+                            <li>Open your project configuration: double-click the project name in the left tree
+                                view. Select your app from the TARGETS section, then select the Info tab, and expand
+                                the URL Types section.
+                            </li>
+                            <li>Click the + button, and add a URL scheme for your reversed client ID. To find this
+                                value, open theGoogleService-Info.plist configuration file, and look for the
+                                REVERSED_CLIENT_ID key. Copy the value of that key, and paste it into the URL
+                                Schemes box on the configuration page. Leave the other fields blank.
+                            </li>
+                            <li>When completed, your config should look something similar to the following (but with
+                                your application-specific values):
+                            </li>
+                            <br>
+                            <img src="images/app/xcode_infotab_url_type_values.png" alt="eRestro"/><br>
+                            <li>now enable SafetyNet for use with Firebase Authentication.In the Google Cloud
+                                Console, enable the <a
                                         href="https://console.cloud.google.com/apis/library/androidcheck.googleapis.com?project=test-6f7bb&folder=&organizationId="
                                         style="color:red">Android DeviceCheck API </a>for your project.first make
-                                    sure your correct project is selected then press enable button.</li>
+                                sure your correct project is selected then press enable button.
+                            </li>
 
-                                <br /><img src="images/app/deviceEnable.png"></a><br><br>
-                            </ol>
-                            <hr>
-                        </section>
-                        <section id="google_fcm">
-                            <h4>Steps to Authenticate firebase using Google </h4>
-                            <ul>
-                                <li>Open your firebase console.</li>
-                                <li>Go to Sign-in method in Authentication.</li>
-                                <li>Go to the Google and enable the google sign_in automatically.
-                                    <img src="images/app/google_fcm1.png" alt="news" /><br>
-                                    <img src="images/app/google_fcm2.png" alt="news" />
-                                </li>
-                                <li>after press on save button google authentication enable in your app.</li>
-                            </ul>
-                        </section>
-
-                        <section id="fb_fcm">
-                            <h4>Authenticate Using Facebook Login on Android with Firebase.</h4>
-                            <ul>
-                                <li>first create project for your android application , go to  <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a></li>
-                                <li> Go to Facebook Quick Start Integrate the Facebook SDK</li>
-                                <li>On the <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a> site, get the <b>App ID</b> and an <b>App Secret</b> for your app. </li>
-                                <li> In the <a href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the <b>Auth</b> section. Enable Facebook Login.</li>
-                                <li>On the <b>Sign in method</b> tab, enable the <b>Facebook</b> sign-in method and specify the <b>App ID</b> and <b>App Secret</b> you got from Facebook.
-                                    <img src="images/app/fb0.png">
-                                </li>
-                                <li>Then, make sure your <b>OAuth redirect URI</b> (e.g. my-app-12345.firebaseapp.com/__/auth/handler) is listed as one of your <b>OAuth redirect URIs</b> in your Facebook app's settings page on the <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a> site in the <b>Product Setting > Facebook Login</b> config </li>
-                                <li>Add the dependencies for Firebase Authentication and Facebook Login SDK to your app-level build.gradle file:
-                                    <img src="images/app/fb1.png"><br>
-                                    <b>Edit Your Resources and Manifest</b>
-                                </li>
-                                <li>Create strings for your Facebook app ID and for those needed to enable Chrome Custom Tabs. Also, add FacebookActivity to your Android manifest.</li>
-                                <li>Open your app >res >values >strings.xml file.
-                                    <img src="images/app/fb3.png">
-                                </li>
-                                <li>Open the app >manifest >AndroidManifest.xml file.</li>
-                                <li>Add the following meta-data element, an activity for Facebook
-                                    <img src="images/app/fb2.png">
-                                </li>
-                                <li>Associate Your Package Name and Default Class with Your App</li>
-
-                                <li>Provide the Development and Release Key Hashes for Your App</li>
-                                <li>To ensure the authenticity of the interactions between your app and Facebook, you need to supply us with the Android key hash for your development environment. If your app has already been published, you should add your release key hash too.
-                                    <img src="images/app/fb5.png">
-                                    <b>Generating a Development Key Hash</b>
-                                    <ol>
-                                        <li> We will use SHA-1 key to generate hashkey for facebook login.</li>
-                                        <li>you can generate hash online. Here is external link for generate key has for facebook login.<a href="http://tomeko.net/online_tools/hex_to_base64.php" target="_blank">Key hash Genrate Link</a>
-                                            <img src="images/app/hash_key1.png"><br>
-                                            <img src="images/app/hash_key2.png">
-                                        </li>
-                                    </ol>
-                                </li>
-                                <li>Create iOS application here.
-                                    <img src="images/app/fb_ios1.png">
-                                </li>
-                                <li>Add your iOS Bundle Id as shown as below fig.
-                                    <img src="images/app/fb_ios2.png">
-                                </li>
-                                <li> Copy code shown in below fig. and paste into Info.plist file.</li>
-                                <li>and after Configure your Info.plist file.
-                                    <img src="images/app/fb_ios3.png"><br>
-                                    <!--<img src="images/app/fb_ios4.png"><br>-->
-                                    and finally iOS app in facebook authentication enabled.<br>  
-                                </li>
-
-                            </ul>
-                            <hr>
-                        </section>
-                        <section id="apple_fcm">
-                            <h4>Steps to Authenticate firebase using Apple </h4>
-                            <ul>
-                                <li>Open your firebase console.</li>
-                                <li>Go to Sign-in method in Authentication.</li>
-                                <li>Go to the Apple and enable apple sign in.
-                                    <img src="images/app/apple1.png" alt="news"/>
-                                </li>
-                                <li>In Xcode, select the Signing & Capabilities tab, and add "Sign In With Apple" as a new Capability then select a team on the Code Signing section.
-                                    <img src="images/app/apple2.png" alt="news"/>
-                                </li>
-                                <li>This will generate and configure an App ID in the "Certificates, Identifiers & Profiles" section of the Apple Developer portal. </li>
-                            </ul>
-                        </section>
+                            <br/><img src="images/app/deviceEnable.png"></a><br><br>
+                        </ol>
+                        <hr>
                     </section>
-                    <section id="generate_release">
-                        <section id="howToGenerateReleaseApk">
-                            <h4>Generate Release bundle for Android</h4>
-
-                            <ol>
-                                <li>In your android studio, right click on you 'android' module of you flutter
-                                    project. There is one option 'flutter', click on that. Then click on 'Open android
-                                    module in android studio'.then
-                                    generate release apk from that new module.</li>
-
-                                <br>
-                                <img src="images/apk1.png" alt="eRestro" /><br><br>
-
-
-                                <li>and if in your android studio, the flutter option is disable then go to File
-                                    option of your android studio. Click on 'Open' option, then locate your flutter
-                                    project's
-                                    android module and open it. now generate relase apk from that new module.</li>
-                                <br>
-                                <img src="images/apk2.png" alt="eRestro" /><br><br>
-                                <img src="images/apk3.png" alt="eRestro" /><br><br>
-                                <img src="images/apk4.png" alt="eRestro" /><br><br>
-                                <img src="images/apk5.png" alt="eRestro" /><br><br>
-                                <li>Wait for build process to finish. If build finish successfully then, in Build menu
-                                    you will get option 'generate signed bundle/apk'.</li>
-                                <li> Choose 'Android App Bundle' here</li><br>
-                                <img src="images/apk6.png" alt="eRestro" /><br><br>
-                                <li>If you are creating apk for first time then click on 'Create New' for Keystore path
-                                    (and save this file for future use). for subsequent version updates always choose
-                                    existing keystore file </li>
-                                <li>Fill all required information and click next</li><br>
-                                <img src="images/apk7.png" alt="eRestro" /><br><br>
-                                <li>from options, choose 'release'</li><br>
-                                <img src="images/apk8.png" alt="eRestro" /><br><br>
-                            </ol>
-                            <li>OR</li>
-                            <ol>
-                                            
-                                            <li>
-                                                Create an upload keystore<br>
-                                                Running the following at the command line:<br>
-                                                <ul>
-                                                   <li>
-                                                    On Mac/Linux, use the following command: <br><br>
-                                                    <!--keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload-->
-                                                    keytool -genkey -v -keystore /upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
-                                                    <br><br>
-                                                   </li>
-                                                   <li>
-                                                    On Windows, use the following command:<br><br>
-                                                    keytool -genkey -v -keystore c:\Users\USER_NAME\upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
-                                                    <br><br>
-                                                </li> 
-                                                
-                                                </ul>
-                                                <img src="images/app/modifyPath.png" alt="eRestro" /><br><br>
-                                                <!--<img src="images/app/remeberPassword.png" alt="eRestro" /><br><br>
-                                                <img src="images/app/success.png" alt="eRestro" /><br><br>-->
-    
-                                            </li>
-    
-                                            <!--<li>
-                                                Reference the keystore from the app<br><br>
-                                                Create a file named [project]/android/key.properties that contains a reference to your keystore:<br>
-                                                <br>
-    
-                                                    
-                                                    
-                                                <img src="images/app/createfile.png" alt="eRestro" /><br><br>
-                                                
-                                                Copy below code, Paste in to key.propertirs file and change as per shown in image.<br><br>
-                                                
-                                                    storePassword=<password from previous step> <br>
-                                                    keyPassword=<password from previous step> <br>
-                                                    keyAlias=upload <br>
-                                                    storeFile=location of the key store file, such as /Users/user name/upload-keystore.jks<br><br>
-                                                <img src="images/app/setPath.png" alt="eRestro" /><br><br>
-    
-                                                
-                                            </li>
-    
-                                            <li>
-                                                Configure signing in gradle <br><br>
-                                                Configure gradle to use your upload key when building your app in release mode by editing the [project]/android/app/build.gradle file.<br>
-                                                
-                                                <ul>
-                                                    <li>
-                                                        Add the below keystore information from your properties file before the android block: <br><br>
-                                                        <br>
-                                                        def keystoreProperties = new Properties()<br>
-                                                        def keystorePropertiesFile = rootProject.file('key.properties')<br>
-                                                        if (keystorePropertiesFile.exists()) {<br>
-                                                            keystoreProperties.load(new FileInputStream(keystorePropertiesFile))<br>
-                                                        }<br><br>
-                 
-    
-                                                <img src="images/app/codeBlock1.png" alt="eRestro" /><br><br>
-                                                    </li>
-                                                    <li>
-                                                        Find the buildTypes block:<br>
-                                                        And replace it with the following signing configuration info:
-                                                     <br><br>
-                                                       signingConfigs { <br>
-                                                                release {<br>
-                                                                    keyAlias keystoreProperties['keyAlias']<br>
-                                                                    keyPassword keystoreProperties['keyPassword']<br>
-                                                                    storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null<br>
-                                                                    storePassword keystoreProperties['storePassword']<br>
-                                                                }<br>
-                                                                }<br>
-                                                                buildTypes {<br>
-                                                                release {<br>
-                                                                    signingConfig signingConfigs.release<br>
-                                                                }<br>
-                                                                }<br> <br>
-    
-                                                                <img src="images/app/codeBlock2.png" alt="eRestro" /><br><br>
-                                                        
-                                                </li></ul>
-                                                <br>  
-                                            </li>-->
-                                            <li>
-                                                Run following commands in Terminal as per your need: <br>
-                                                <ul>
-                                                    <li>
-    
-                                                        To generate an APK <br>
-                                                        flutter build apk 
-                                                    </li>
-                                                    <li>
-    
-                                                        To generate an App Bundle <br>
-                                                        flutter build appbundle 
-                                                    </li>
-                                                    <br>
-                                                    <img src="images/app/generateAPK.png" alt="eRestro" /><br><br>
-                                                </ul>
-                                            </li>
-                                        </ol>
-                                        </ol>
-                                    </ol> 
-                            <hr>
-                        </section>
-
-                        <section id="iosRelease">
-                            <h4>Steps to Publish iOS App to App Store</h4>
-
-                            <ol>
-                                <li>Open your Project's Runner.xcworkspace file in Xcode, and Add your Team [Your
-                                    Apple Developer ID] and also Insert GoogleService-Info.plist file [Downloaded
-                                    From Firebase Project] inside folder named Runner.</li>
-
-                                <br>
-                                <img src="images/ios1.png" alt="eRestro" /><br><br>
-
-                                <li>and then Select <b>Any iOS Device (armv7,arm64)</b> as shown in image below.
-                                </li>
-                                <br>
-                                <img src="images/ios2.png" alt="eRestro" /><br><br>
-
-                                <li>After that Select <b>Archive</b> From Product Menu of Xcode as shown below.
-                                </li>
-
-                                <br>
-                                <img src="images/ios3.png" alt="eRestro" /><br><br>
-
-                                <li>Once Build / Archive Generated, pop up window will be shown. Validate app First,
-                                    and After Successfull Validation of App, You Can Distribute App to AppStore.
-                                </li>
-
-                                <img src="images/ios4.png" alt="eRestro" /><br><br>
-
-
-                                <li>After SuccessFull Submission of Build File, it will be Reflected to your Apple
-                                    Developer Account in which we have created app with same Bundle ID.</li>
-                                <a href="https://codewithchris.com/submit-your-app-to-the-app-store/"
-                                    style="color:red">Click here for Detailed Help</a>
-
-                            </ol>
-
-                            <hr>
-                        </section>
+                    <section id="google_fcm">
+                        <h4>Steps to Authenticate firebase using Google </h4>
+                        <ul>
+                            <li>Open your firebase console.</li>
+                            <li>Go to Sign-in method in Authentication.</li>
+                            <li>Go to the Google and enable the google sign_in automatically.
+                                <img src="images/app/google_fcm1.png" alt="news"/><br>
+                                <img src="images/app/google_fcm2.png" alt="news"/>
+                            </li>
+                            <li>after press on save button google authentication enable in your app.</li>
+                        </ul>
                     </section>
 
+                    <section id="fb_fcm">
+                        <h4>Authenticate Using Facebook Login on Android with Firebase.</h4>
+                        <ul>
+                            <li>first create project for your android application , go to <a href="https://developers.facebook.com/" target="_blank">Facebook
+                                for Developers</a></li>
+                            <li> Go to Facebook Quick Start Integrate the Facebook SDK</li>
+                            <li>On the <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a> site, get the <b>App
+                                ID</b> and an <b>App Secret</b> for your app.
+                            </li>
+                            <li> In the <a href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the <b>Auth</b>
+                                section. Enable Facebook Login.
+                            </li>
+                            <li>On the <b>Sign in method</b> tab, enable the <b>Facebook</b> sign-in method and specify the <b>App ID</b> and <b>App
+                                Secret</b> you got from Facebook.
+                                <img src="images/app/fb0.png">
+                            </li>
+                            <li>Then, make sure your <b>OAuth redirect URI</b> (e.g. my-app-12345.firebaseapp.com/__/auth/handler) is listed as one of
+                                your <b>OAuth redirect URIs</b> in your Facebook app's settings page on the <a href="https://developers.facebook.com/"
+                                                                                                               target="_blank">Facebook for
+                                    Developers</a> site in the <b>Product Setting > Facebook Login</b> config
+                            </li>
+                            <li>Add the dependencies for Firebase Authentication and Facebook Login SDK to your app-level build.gradle file:
+                                <img src="images/app/fb1.png"><br>
+                                <b>Edit Your Resources and Manifest</b>
+                            </li>
+                            <li>Create strings for your Facebook app ID and for those needed to enable Chrome Custom Tabs. Also, add FacebookActivity
+                                to your Android manifest.
+                            </li>
+                            <li>Open your app >res >values >strings.xml file.
+                                <img src="images/app/fb3.png">
+                            </li>
+                            <li>Open the app >manifest >AndroidManifest.xml file.</li>
+                            <li>Add the following meta-data element, an activity for Facebook
+                                <img src="images/app/fb2.png">
+                            </li>
+                            <li>Associate Your Package Name and Default Class with Your App</li>
+
+                            <li>Provide the Development and Release Key Hashes for Your App</li>
+                            <li>To ensure the authenticity of the interactions between your app and Facebook, you need to supply us with the Android
+                                key hash for your development environment. If your app has already been published, you should add your release key
+                                hash too.
+                                <img src="images/app/fb5.png">
+                                <b>Generating a Development Key Hash</b>
+                                <ol>
+                                    <li> We will use SHA-1 key to generate hashkey for facebook login.</li>
+                                    <li>you can generate hash online. Here is external link for generate key has for facebook login.<a
+                                            href="http://tomeko.net/online_tools/hex_to_base64.php" target="_blank">Key hash Genrate Link</a>
+                                        <img src="images/app/hash_key1.png"><br>
+                                        <img src="images/app/hash_key2.png">
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>Create iOS application here.
+                                <img src="images/app/fb_ios1.png">
+                            </li>
+                            <li>Add your iOS Bundle Id as shown as below fig.
+                                <img src="images/app/fb_ios2.png">
+                            </li>
+                            <li> Copy code shown in below fig. and paste into Info.plist file.</li>
+                            <li>and after Configure your Info.plist file.
+                                <img src="images/app/fb_ios3.png"><br>
+                                <!--<img src="images/app/fb_ios4.png"><br>-->
+                                and finally iOS app in facebook authentication enabled.<br>
+                            </li>
+
+                        </ul>
+                        <hr>
                     </section>
-                    <hr class="divider">
-
-                    <section id="support">
-                        <h3>Support</h3>
-                        <p>Its our pleasure to serve our service and support. please contact our support team.</p>
-                        <p>Head of Customer Support : Hency Pithadiya<br>
-                            Skype: <a href="https://join.skype.com/invite/YvVpSKoSbtzD" target="_blank"
-                                style='color:#3c55d1'> Hency Pithadiya</a><br>
-
-
-
-                        </p>
-                        <p>To help our customers, we constantly be in touch with every customer if they need any
-                            assistance regarding our product.
-                            We offer our customers a support from <strong> Mon – Fri 9.00am to 6.00pm IST (GMT +5.30) –
-                                We are a Team located in India – Asia.</strong></p>
-                        <p>Typically we reply our customers for all the questions and queries within 24 hours of time
-                            via comments, support forum or emails.</p>
+                    <section id="apple_fcm">
+                        <h4>Steps to Authenticate firebase using Apple </h4>
+                        <ul>
+                            <li>Open your firebase console.</li>
+                            <li>Go to Sign-in method in Authentication.</li>
+                            <li>Go to the Apple and enable apple sign in.
+                                <img src="images/app/apple1.png" alt="news"/>
+                            </li>
+                            <li>In Xcode, select the Signing & Capabilities tab, and add "Sign In With Apple" as a new Capability then select a team
+                                on the Code Signing section.
+                                <img src="images/app/apple2.png" alt="news"/>
+                            </li>
+                            <li>This will generate and configure an App ID in the "Certificates, Identifiers & Profiles" section of the Apple
+                                Developer portal.
+                            </li>
+                        </ul>
                     </section>
-                    <hr class="divider">
+                </section>
+                <section id="generate_release">
+                    <section id="howToGenerateReleaseApk">
+                        <h4>Generate Release bundle for Android</h4>
 
-                    <section id="rating">
-                        <h3>Your Feedback</h3>
-                        <p>Dear valuable customer,
-                            Thank you very much for choosing our product.
-                            It's our pleasure to serve top-notch service to you.
-                            Please give us your honest feedback that will help us to make a more strong and reliable
-                            product by click here <a
+                        <ol>
+                            <li>In your android studio, right click on you 'android' module of you flutter
+                                project. There is one option 'flutter', click on that. Then click on 'Open android
+                                module in android studio'.then
+                                generate release apk from that new module.
+                            </li>
+
+                            <br>
+                            <img src="images/apk1.png" alt="eRestro"/><br><br>
+
+
+                            <li>and if in your android studio, the flutter option is disable then go to File
+                                option of your android studio. Click on 'Open' option, then locate your flutter
+                                project's
+                                android module and open it. now generate relase apk from that new module.
+                            </li>
+                            <br>
+                            <img src="images/apk2.png" alt="eRestro"/><br><br>
+                            <img src="images/apk3.png" alt="eRestro"/><br><br>
+                            <img src="images/apk4.png" alt="eRestro"/><br><br>
+                            <img src="images/apk5.png" alt="eRestro"/><br><br>
+                            <li>Wait for build process to finish. If build finish successfully then, in Build menu
+                                you will get option 'generate signed bundle/apk'.
+                            </li>
+                            <li> Choose 'Android App Bundle' here</li>
+                            <br>
+                            <img src="images/apk6.png" alt="eRestro"/><br><br>
+                            <li>If you are creating apk for first time then click on 'Create New' for Keystore path
+                                (and save this file for future use). for subsequent version updates always choose
+                                existing keystore file
+                            </li>
+                            <li>Fill all required information and click next</li>
+                            <br>
+                            <img src="images/apk7.png" alt="eRestro"/><br><br>
+                            <li>from options, choose 'release'</li>
+                            <br>
+                            <img src="images/apk8.png" alt="eRestro"/><br><br>
+                        </ol>
+                        <li>OR</li>
+                        <ol>
+
+                            <li>
+                                Create an upload keystore<br>
+                                Running the following at the command line:<br>
+                                <ul>
+                                    <li>
+                                        On Mac/Linux, use the following command: <br><br>
+                                        <!--keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload-->
+                                        keytool -genkey -v -keystore /upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+                                        <br><br>
+                                    </li>
+                                    <li>
+                                        On Windows, use the following command:<br><br>
+                                        keytool -genkey -v -keystore c:\Users\USER_NAME\upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048
+                                        -validity 10000 -alias upload
+                                        <br><br>
+                                    </li>
+
+                                </ul>
+                                <img src="images/app/modifyPath.png" alt="eRestro"/><br><br>
+                                <!--<img src="images/app/remeberPassword.png" alt="eRestro" /><br><br>
+                                <img src="images/app/success.png" alt="eRestro" /><br><br>-->
+
+                            </li>
+
+                            <!--<li>
+                                Reference the keystore from the app<br><br>
+                                Create a file named [project]/android/key.properties that contains a reference to your keystore:<br>
+                                <br>
+
+
+
+                                <img src="images/app/createfile.png" alt="eRestro" /><br><br>
+
+                                Copy below code, Paste in to key.propertirs file and change as per shown in image.<br><br>
+
+                                    storePassword=<password from previous step> <br>
+                                    keyPassword=<password from previous step> <br>
+                                    keyAlias=upload <br>
+                                    storeFile=location of the key store file, such as /Users/user name/upload-keystore.jks<br><br>
+                                <img src="images/app/setPath.png" alt="eRestro" /><br><br>
+
+
+                            </li>
+
+                            <li>
+                                Configure signing in gradle <br><br>
+                                Configure gradle to use your upload key when building your app in release mode by editing the [project]/android/app/build.gradle file.<br>
+
+                                <ul>
+                                    <li>
+                                        Add the below keystore information from your properties file before the android block: <br><br>
+                                        <br>
+                                        def keystoreProperties = new Properties()<br>
+                                        def keystorePropertiesFile = rootProject.file('key.properties')<br>
+                                        if (keystorePropertiesFile.exists()) {<br>
+                                            keystoreProperties.load(new FileInputStream(keystorePropertiesFile))<br>
+                                        }<br><br>
+
+
+                                <img src="images/app/codeBlock1.png" alt="eRestro" /><br><br>
+                                    </li>
+                                    <li>
+                                        Find the buildTypes block:<br>
+                                        And replace it with the following signing configuration info:
+                                     <br><br>
+                                       signingConfigs { <br>
+                                                release {<br>
+                                                    keyAlias keystoreProperties['keyAlias']<br>
+                                                    keyPassword keystoreProperties['keyPassword']<br>
+                                                    storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null<br>
+                                                    storePassword keystoreProperties['storePassword']<br>
+                                                }<br>
+                                                }<br>
+                                                buildTypes {<br>
+                                                release {<br>
+                                                    signingConfig signingConfigs.release<br>
+                                                }<br>
+                                                }<br> <br>
+
+                                                <img src="images/app/codeBlock2.png" alt="eRestro" /><br><br>
+
+                                </li></ul>
+                                <br>
+                            </li>-->
+                            <li>
+                                Run following commands in Terminal as per your need: <br>
+                                <ul>
+                                    <li>
+
+                                        To generate an APK <br>
+                                        flutter build apk
+                                    </li>
+                                    <li>
+
+                                        To generate an App Bundle <br>
+                                        flutter build appbundle
+                                    </li>
+                                    <br>
+                                    <img src="images/app/generateAPK.png" alt="eRestro"/><br><br>
+                                </ul>
+                            </li>
+                        </ol>
+                        </ol>
+                        </ol>
+                        <hr>
+                    </section>
+
+                    <section id="iosRelease">
+                        <h4>Steps to Publish iOS App to App Store</h4>
+
+                        <ol>
+                            <li>Open your Project's Runner.xcworkspace file in Xcode, and Add your Team [Your
+                                Apple Developer ID] and also Insert GoogleService-Info.plist file [Downloaded
+                                From Firebase Project] inside folder named Runner.
+                            </li>
+
+                            <br>
+                            <img src="images/ios1.png" alt="eRestro"/><br><br>
+
+                            <li>and then Select <b>Any iOS Device (armv7,arm64)</b> as shown in image below.
+                            </li>
+                            <br>
+                            <img src="images/ios2.png" alt="eRestro"/><br><br>
+
+                            <li>After that Select <b>Archive</b> From Product Menu of Xcode as shown below.
+                            </li>
+
+                            <br>
+                            <img src="images/ios3.png" alt="eRestro"/><br><br>
+
+                            <li>Once Build / Archive Generated, pop up window will be shown. Validate app First,
+                                and After Successfull Validation of App, You Can Distribute App to AppStore.
+                            </li>
+
+                            <img src="images/ios4.png" alt="eRestro"/><br><br>
+
+
+                            <li>After SuccessFull Submission of Build File, it will be Reflected to your Apple
+                                Developer Account in which we have created app with same Bundle ID.
+                            </li>
+                            <a href="https://codewithchris.com/submit-your-app-to-the-app-store/"
+                               style="color:red">Click here for Detailed Help</a>
+
+                        </ol>
+
+                        <hr>
+                    </section>
+                </section>
+
+                </section>
+                <hr class="divider">
+
+                <section id="support">
+                    <h3>Support</h3>
+                    <p>Its our pleasure to serve our service and support. please contact our support team.</p>
+                    <p>Head of Customer Support : Hency Pithadiya<br>
+                        Skype: <a href="https://join.skype.com/invite/YvVpSKoSbtzD" target="_blank"
+                                  style='color:#3c55d1'> Hency Pithadiya</a><br>
+
+
+                    </p>
+                    <p>To help our customers, we constantly be in touch with every customer if they need any
+                        assistance regarding our product.
+                        We offer our customers a support from <strong> Mon – Fri 9.00am to 6.00pm IST (GMT +5.30) –
+                            We are a Team located in India – Asia.</strong></p>
+                    <p>Typically we reply our customers for all the questions and queries within 24 hours of time
+                        via comments, support forum or emails.</p>
+                </section>
+                <hr class="divider">
+
+                <section id="rating">
+                    <h3>Your Feedback</h3>
+                    <p>Dear valuable customer,
+                        Thank you very much for choosing our product.
+                        It's our pleasure to serve top-notch service to you.
+                        Please give us your honest feedback that will help us to make a more strong and reliable
+                        product by click here <a
                                 href="https://codecanyon.net/item/erestro-flutter-multi-restaurant-vendor-marketplace-food-ordering-app-for-hyperlocal-business/37241677"
                                 style="color:#3c55d1" target="_blank">Rate Us</a>.
-                            Thank you very much.</p>
-                    </section>
-                    <hr class="divider">
+                        Thank you very much.</p>
+                </section>
+                <hr class="divider">
 
-                    <section id="contactus">
-                        <h3>Contact Us</h3>
-                        <p>WRTeam has creative and dedicated group of developers who are mastered in Apps Developments
-                            and Web Application Development with a niche in delivering quality solutions to customers
-                            across the globe.
-                            Contact us today to find out how we can help you or for freelance work.
-                        </p>
-                        <p>Visit Us : <a href="https://wrteam.in/" target="_blank">https://wrteam.in</a>
-                        </p>
-                        <p>Mail Us : info@wrteam.in</p>
-                        <p>Thank you very much.</p>
-                    </section>
-                    <hr class="divider">
+                <section id="contactus">
+                    <h3>Contact Us</h3>
+                    <p>WRTeam has creative and dedicated group of developers who are mastered in Apps Developments
+                        and Web Application Development with a niche in delivering quality solutions to customers
+                        across the globe.
+                        Contact us today to find out how we can help you or for freelance work.
+                    </p>
+                    <p>Visit Us : <a href="https://wrteam.in/" target="_blank">https://wrteam.in</a>
+                    </p>
+                    <p>Mail Us : info@wrteam.in</p>
+                    <p>Thank you very much.</p>
+                </section>
+                <hr class="divider">
 
-                </div>
             </div>
-
         </div>
-        <!-- Content end -->
-
 
     </div>
-    <!-- Document Wrapper end -->
+    <!-- Content end -->
 
-    <!-- Back To Top -->
-    <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
-            class="fa fa-chevron-up"></i></a>
 
-    <!-- JavaScript
-        ============================ -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Easing -->
-    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <!-- Custom Script -->
-    <script src="assets/js/theme.js"></script>
+</div>
+<!-- Document Wrapper end -->
+
+<!-- Back To Top -->
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+        class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript
+    ============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Easing -->
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
 </body>
 
 </html>
